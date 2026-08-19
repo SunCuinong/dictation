@@ -1,42 +1,372 @@
 [
-  { "en": "apple", "cn": "苹果", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcpzhvv", "history": [] },
-  { "en": "banana", "cn": "香蕉", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gc7cqtv", "history": [] },
-  { "en": "cat", "cn": "猫", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcq49lm", "history": [] },
-  { "en": "dog", "cn": "狗", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gco88wp", "history": [] },
-  { "en": "book", "cn": "书", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gc07k2j", "history": [] },
-  { "en": "water", "cn": "水", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcptc9d", "history": [] },
-  { "en": "school", "cn": "学校", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcavn6v", "history": [] },
-  { "en": "teacher", "cn": "老师", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcdg1j8", "history": [] },
-  { "en": "student", "cn": "学生", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gc2h3us", "history": [] },
-  { "en": "friend", "cn": "朋友", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gca9qxa", "history": [] },
-  { "en": "family", "cn": "家庭", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcy349z", "history": [] },
-  { "en": "happy", "cn": "开心的", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gctgebd", "history": [] },
-  { "en": "red", "cn": "红色", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gc6erub", "history": [] },
-  { "en": "blue", "cn": "蓝色", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcoyspz", "history": [] },
-  { "en": "green", "cn": "绿色", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcxc8pv", "history": [] },
-  { "en": "yellow", "cn": "黄色", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gc6ksrp", "history": [] },
-  { "en": "morning", "cn": "早晨", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gc01e0q", "history": [] },
-  { "en": "evening", "cn": "晚上", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcw4yhu", "history": [] },
-  { "en": "today", "cn": "今天", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gce12bu", "history": [] },
-  { "en": "tomorrow", "cn": "明天", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcxrs73", "history": [] },
-  { "en": "computer", "cn": "电脑", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcmtmi6", "history": [] },
-  { "en": "music", "cn": "音乐", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcuzogm", "history": [] },
-  { "en": "sport", "cn": "运动", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gc3dhix", "history": [] },
-  { "en": "food", "cn": "食物", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gc7ur8c", "history": [] },
-  { "en": "animal", "cn": "动物", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gc6mmgl", "history": [] },
-  { "en": "plant", "cn": "植物", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gc9a200", "history": [] },
-  { "en": "weather", "cn": "天气", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gc1yeka", "history": [] },
-  { "en": "travel", "cn": "旅行", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gc2wfu4", "history": [] },
-  { "en": "language", "cn": "语言", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gc4kabg", "history": [] },
-  { "en": "science", "cn": "科学", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcrdd99", "history": [] },
-  { "en": "history", "cn": "历史", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gchq9u2", "history": [] },
-  { "en": "math", "cn": "数学", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gc67z4n", "history": [] },
-  { "en": "english", "cn": "英语", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gc4r6r8", "history": [] },
-  { "en": "chinese", "cn": "中文", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcwjnap", "history": [] },
-  { "en": "write", "cn": "写", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcrdm5j", "history": [] },
-  { "en": "read", "cn": "读", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gc3ionk", "history": [] },
-  { "en": "listen", "cn": "听", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gckqx7t", "history": [] },
-  { "en": "speak", "cn": "说", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcgou3i", "history": [] },
-  { "en": "learn", "cn": "学习", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gcvhne7", "history": [] },
-  { "en": "remember", "cn": "记住", "status": "new", "streak": 0, "wrongCount": 0, "id": "mszr36gclk0oy", "history": [] }
+  {
+    "en": "apple",
+    "cn": "苹果",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gcpzhvv",
+    "history": []
+  },
+  {
+    "en": "banana",
+    "cn": "香蕉",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gc7cqtv",
+    "history": []
+  },
+  {
+    "en": "cat",
+    "cn": "猫",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gcq49lm",
+    "history": []
+  },
+  {
+    "en": "dog",
+    "cn": "狗",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gco88wp",
+    "history": []
+  },
+  {
+    "en": "book",
+    "cn": "书",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gc07k2j",
+    "history": []
+  },
+  {
+    "en": "water",
+    "cn": "水",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gcptc9d",
+    "history": []
+  },
+  {
+    "en": "school",
+    "cn": "学校",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gcavn6v",
+    "history": []
+  },
+  {
+    "en": "teacher",
+    "cn": "老师",
+    "status": "learned",
+    "streak": 1,
+    "wrongCount": 0,
+    "id": "mszr36gcdg1j8",
+    "history": [
+      true
+    ]
+  },
+  {
+    "en": "student",
+    "cn": "学生",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gc2h3us",
+    "history": []
+  },
+  {
+    "en": "friend",
+    "cn": "朋友",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gca9qxa",
+    "history": []
+  },
+  {
+    "en": "family",
+    "cn": "家庭",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gcy349z",
+    "history": []
+  },
+  {
+    "en": "happy",
+    "cn": "开心的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gctgebd",
+    "history": []
+  },
+  {
+    "en": "red",
+    "cn": "红色",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gc6erub",
+    "history": []
+  },
+  {
+    "en": "blue",
+    "cn": "蓝色",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gcoyspz",
+    "history": []
+  },
+  {
+    "en": "green",
+    "cn": "绿色",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gcxc8pv",
+    "history": []
+  },
+  {
+    "en": "yellow",
+    "cn": "黄色",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gc6ksrp",
+    "history": []
+  },
+  {
+    "en": "morning",
+    "cn": "早晨",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gc01e0q",
+    "history": []
+  },
+  {
+    "en": "evening",
+    "cn": "晚上",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gcw4yhu",
+    "history": []
+  },
+  {
+    "en": "today",
+    "cn": "今天",
+    "status": "learned",
+    "streak": 1,
+    "wrongCount": 0,
+    "id": "mszr36gce12bu",
+    "history": [
+      true
+    ]
+  },
+  {
+    "en": "tomorrow",
+    "cn": "明天",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gcxrs73",
+    "history": []
+  },
+  {
+    "en": "computer",
+    "cn": "电脑",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gcmtmi6",
+    "history": []
+  },
+  {
+    "en": "music",
+    "cn": "音乐",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gcuzogm",
+    "history": []
+  },
+  {
+    "en": "sport",
+    "cn": "运动",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gc3dhix",
+    "history": []
+  },
+  {
+    "en": "food",
+    "cn": "食物",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gc7ur8c",
+    "history": []
+  },
+  {
+    "en": "animal",
+    "cn": "动物",
+    "status": "wrong",
+    "streak": 0,
+    "wrongCount": 1,
+    "id": "mszr36gc6mmgl",
+    "history": [
+      false
+    ]
+  },
+  {
+    "en": "plant",
+    "cn": "植物",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gc9a200",
+    "history": []
+  },
+  {
+    "en": "weather",
+    "cn": "天气",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gc1yeka",
+    "history": []
+  },
+  {
+    "en": "travel",
+    "cn": "旅行",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gc2wfu4",
+    "history": []
+  },
+  {
+    "en": "language",
+    "cn": "语言",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gc4kabg",
+    "history": []
+  },
+  {
+    "en": "science",
+    "cn": "科学",
+    "status": "wrong",
+    "streak": 0,
+    "wrongCount": 1,
+    "id": "mszr36gcrdd99",
+    "history": [
+      false
+    ]
+  },
+  {
+    "en": "history",
+    "cn": "历史",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gchq9u2",
+    "history": []
+  },
+  {
+    "en": "math",
+    "cn": "数学",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gc67z4n",
+    "history": []
+  },
+  {
+    "en": "english",
+    "cn": "英语",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gc4r6r8",
+    "history": []
+  },
+  {
+    "en": "chinese",
+    "cn": "中文",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gcwjnap",
+    "history": []
+  },
+  {
+    "en": "write",
+    "cn": "写",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gcrdm5j",
+    "history": []
+  },
+  {
+    "en": "read",
+    "cn": "读",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gc3ionk",
+    "history": []
+  },
+  {
+    "en": "listen",
+    "cn": "听",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gckqx7t",
+    "history": []
+  },
+  {
+    "en": "speak",
+    "cn": "说",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gcgou3i",
+    "history": []
+  },
+  {
+    "en": "learn",
+    "cn": "学习",
+    "status": "wrong",
+    "streak": 0,
+    "wrongCount": 1,
+    "id": "mszr36gcvhne7",
+    "history": [
+      false
+    ]
+  },
+  {
+    "en": "remember",
+    "cn": "记住",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "mszr36gclk0oy",
+    "history": []
+  }
 ]
