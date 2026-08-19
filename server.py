@@ -80,14 +80,20 @@ def save_words_and_push(data):
         pass
 
 
+_TTS_CACHE = {}  # key -> bytes，避免重复合成
+
 async def synthesize(text, voice, rate):
-    # rate 形如 +0%、-20%、+20%
+    key = f"{voice}|{rate}|{text}"
+    if key in _TTS_CACHE:
+        return _TTS_CACHE[key]
     comm = edge_tts.Communicate(text, voice, rate=rate)
     audio = bytearray()
     async for chunk in comm.stream():
         if chunk["type"] == "audio":
             audio.extend(chunk["data"])
-    return bytes(audio)
+    data = bytes(audio)
+    _TTS_CACHE[key] = data
+    return data
 
 
 class Handler(BaseHTTPRequestHandler):

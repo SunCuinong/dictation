@@ -24,16 +24,7 @@
         <p class="hero-sub">导入或内置词库，每天听写，自动巩固错词。</p>
       </div>
       <div class="home-stats" id="homeStats"></div>
-      <div class="home-actions">
-        <button id="homeListenBtn" class="btn btn-primary btn-block">▶ 开始听写</button>
-        <button id="homeDictBtn" class="btn btn-ghost btn-block">📚 进入题库（查看状态 / 导入新词）</button>
-      </div>
-    </section>
-
-    <!-- ============ 听写 ============ -->
-    <section id="listenView" class="view" hidden>
-      <div class="setup" id="setupPanel">
-        <h2>听写设置</h2>
+      <div class="setup">
         <div class="setup-row">
           <label for="countInput">本次听写数量</label>
           <input id="countInput" type="number" min="1" value="30" />
@@ -54,8 +45,31 @@
             <option value="3">3 次</option>
           </select>
         </div>
+        <div class="setup-row">
+          <label for="gapSelect">词间停顿</label>
+          <select id="gapSelect">
+            <option value="0">无停顿</option>
+            <option value="800" selected>短（0.8秒）</option>
+            <option value="1500">中（1.5秒）</option>
+            <option value="2500">长（2.5秒）</option>
+          </select>
+        </div>
         <div class="setup-info" id="setupInfo"></div>
-        <button id="startBtn" class="btn btn-primary btn-block">生成听写清单</button>
+      </div>
+      <div class="home-actions">
+        <button id="homeListenBtn" class="btn btn-primary btn-block">▶ 开始听写</button>
+        <button id="homeDictBtn" class="btn btn-ghost btn-block">📚 进入题库（查看状态 / 导入新词）</button>
+      </div>
+    </section>
+
+    <!-- ============ 听写 ============ -->
+    <section id="listenView" class="view" hidden>
+      <!-- 加载缓存 -->
+      <div class="loading" id="loadingPanel">
+        <div class="spinner"></div>
+        <div class="loading-text">正在准备音频…</div>
+        <div class="loading-progress" id="loadingProgress">0 / 0</div>
+        <div class="progress-bar" style="margin-top:12px;"><div id="loadingFill" class="progress-fill" style="background:var(--ok);"></div></div>
       </div>
 
       <div class="session" id="sessionPanel" hidden>

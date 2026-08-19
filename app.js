@@ -62,6 +62,7 @@ let words = [];
   try { localStorage.setItem(STORE_KEY, JSON.stringify(words)); } catch (e) {}
   renderHome();
   renderDict();
+  updateSetupInfo();
 })();
 
 /* ============ TTS（后端 Edge 神经语音，失败回退浏览器） ============ */
@@ -75,77 +76,35 @@ function pickVoice(lang) {
   return voices.find(v => v.lang && v.lang.toLowerCase().startsWith(lang)) || null;
 }
 
-// 用后端 edge_tts 合成并播放；返回 Promise<boolean> 是否成功
-function speakBackend(text, lang, rate) {
+// 音频缓存：text+lang+rate -> blobUrl，避免重复请求/合成
+const _audioCache = {};
+function fetchAudio(text, lang, rate) {
+  const key = `${lang}|${rate}|${text}`;
+  if (_audioCache[key]) return Promise.resolve(_audioCache[key]);
   const url = `${API_BASE}/api/tts?text=${encodeURIComponent(text)}&lang=${lang}&rate=${rate}`;
   return fetch(url)
     .then(r => { if (!r.ok) throw new Error('tts failed'); return r.blob(); })
     .then(blob => {
-      const audio = new Audio(URL.createObjectURL(blob));
-      return new Promise((resolve) => {
-        audio.onended = () => { URL.revokeObjectURL(audio.src); resolve(true); };
-        audio.onerror = () => resolve(false);
-        audio.play().catch(() => resolve(false));
-      });
+      const u = URL.createObjectURL(blob);
+      _audioCache[key] = u;
+      return u;
     });
 }
-function speakLocal(text, lang, rate, times) {
-  if (!('speechSynthesis' in window)) return Promise.resolve(false);
+function playUrl(url) {
   return new Promise((resolve) => {
-    window.speechSynthesis.cancel();
-    let i = 0;
-    const utter = () => {
-      const u = new SpeechSynthesisUtterance(text);
-      u.lang = lang === 'en' ? 'en-US' : 'zh-CN';
-      u.rate = rate || 1;
-      const v = pickVoice(u.lang);
-      if (v) u.voice = v;
-      return u;
-    };
-    const playNext = () => {
-      if (i >= (times || 1)) { resolve(true); return; }
-      i++;
-      const u = utter();
-      if (i < (times || 1)) u.onend = playNext;
-      else u.onend = () => resolve(true);
-      window.speechSynthesis.speak(u);
-    };
-    playNext();
+    const a = new Audio(url);
+    a.onended = () => resolve(true);
+    a.onerror = () => resolve(false);
+    a.play().catch(() => resolve(false));
   });
 }
+function wait(ms) { return new Promise(r => setTimeout(r, ms)); }
 
-// 单段朗读：优先后端，失败回退本地
-function speak(text, lang, rate, times) {
-  rate = rate || 1;
-  speakBackend(text, lang, rate)
-    .then(ok => { if (!ok) return speakLocal(text, lang, rate, times || 1); })
-    .catch(() => speakLocal(text, lang, rate, times || 1));
-}
-
-// 依次朗读：英文(重复 times) -> 中文(1次)，优先后端
-function speakSequence(en, cn, rate, times) {
-  rate = rate || 1;
-  const playLocalSeq = () => {
-    speakLocal(en, 'en', rate, times).then(() => speakLocal(cn, 'zh', rate, 1));
-  };
-  speakBackend(en, 'en', rate)
-    .then(ok => {
-      if (!ok) { playLocalSeq(); return; }
-      // 英文重复次数通过多次后端请求实现
-      let i = 1;
-      const repeatEn = () => {
-        if (i >= times) {
-          speakBackend(cn, 'zh', rate)
-            .then(ok2 => { if (!ok2) speakLocal(cn, 'zh', rate, 1); })
-            .catch(() => speakLocal(cn, 'zh', rate, 1));
-        } else {
-          i++;
-          speakBackend(en, 'en', rate).then(repeatEn).catch(playLocalSeq);
-        }
-      };
-      repeatEn();
-    })
-    .catch(playLocalSeq);
+// 播放单个词（已缓存）：英文×repeat -> 中文×1 -> 词间停顿 gap
+async function playWordAudio(enUrl, zhUrl, repeat, gap) {
+  for (let i = 0; i < Math.max(1, repeat); i++) await playUrl(enUrl);
+  await playUrl(zhUrl);
+  if (gap > 0) await wait(gap);
 }
 
 /* ============ 听写清单生成 ============ */
@@ -206,8 +165,8 @@ function showView(v) {
 /* ============ 导航 ============ */
 $('#navHomeBtn').addEventListener('click', () => { renderHome(); showView('home'); });
 $('#navDictBtn').addEventListener('click', () => { renderDict(); showView('dict'); });
-$('#navListenBtn').addEventListener('click', () => { resetToSetup(); showView('listen'); });
-$('#homeListenBtn').addEventListener('click', () => { resetToSetup(); showView('listen'); });
+$('#navListenBtn').addEventListener('click', () => { showView('listen'); startSession(); });
+$('#homeListenBtn').addEventListener('click', () => { showView('listen'); startSession(); });
 $('#homeDictBtn').addEventListener('click', () => { renderDict(); showView('dict'); });
 
 /* ============ 首页 ============ */
@@ -224,15 +183,9 @@ function renderHome() {
 }
 
 /* ============ 听写流程 ============ */
-let session = null; // { items:[{id,firstStatus}], idx, rate, repeat, graded:{} }
+let session = null; // { items:[{id,firstStatus,audio:{enUrl,zhUrl}}], idx, rate, repeat, gap, graded:{} }
 let current = null;
 
-function resetToSetup() {
-  $('#setupPanel').hidden = false;
-  $('#sessionPanel').hidden = true;
-  $('#answerPanel').hidden = true;
-  updateSetupInfo();
-}
 function updateSetupInfo() {
   const wrong = words.filter(w => w.status === 'wrong').length;
   const fresh = words.filter(w => w.status === 'new').length;
@@ -241,18 +194,45 @@ function updateSetupInfo() {
     `词库共 ${total} 词：未听写 ${fresh} 个，错词待巩固 ${wrong} 个。本次将优先抽取错词，不足部分用新词补足。`;
 }
 
-$('#startBtn').addEventListener('click', () => {
+// 开始：读设置 -> 预缓存全部音频 -> 进入听写
+async function startSession() {
   const count = Math.max(1, parseInt($('#countInput').value, 10) || 30);
   const rate = parseFloat($('#speedSelect').value);
   const repeat = parseInt($('#repeatSelect').value, 10);
+  const gap = parseInt($('#gapSelect').value, 10);
   const items = buildSession(count);
   if (items.length === 0) { alert('词库为空，请先到「题库」添加单词。'); return; }
-  session = { items, idx: 0, rate, repeat, graded: {} };
-  $('#setupPanel').hidden = true;
+
+  // 显示加载
+  $('#loadingPanel').hidden = false;
+  $('#sessionPanel').hidden = true;
   $('#answerPanel').hidden = true;
+  $('#loadingProgress').textContent = `0 / ${items.length}`;
+  $('#loadingFill').style.width = '0%';
+
+  // 并发预缓存每个词的 英文 + 中文 音频
+  let done = 0;
+  await Promise.all(items.map(async (item) => {
+    const w = words.find(x => x.id === item.id);
+    try {
+      const [enUrl, zhUrl] = await Promise.all([
+        fetchAudio(w.en, 'en', rate),
+        fetchAudio(w.cn, 'zh', rate)
+      ]);
+      item.audio = { enUrl, zhUrl };
+    } catch (e) {
+      item.audio = null; // 拉取失败，留空
+    }
+    done++;
+    $('#loadingProgress').textContent = `${done} / ${items.length}`;
+    $('#loadingFill').style.width = (done / items.length * 100) + '%';
+  }));
+
+  session = { items, idx: 0, rate, repeat, gap, graded: {} };
+  $('#loadingPanel').hidden = true;
   $('#sessionPanel').hidden = false;
   nextWord();
-});
+}
 
 function nextWord() {
   if (session.idx >= session.items.length) { showAnswerSheet(); return; }
@@ -264,8 +244,8 @@ function nextWord() {
   st.className = 'word-status ' + (w.status === 'wrong' ? 'wrong' : w.status === 'learned' ? 'learned' : 'first');
   st.textContent = w.status === 'wrong' ? '错词巩固' : w.status === 'learned' ? '复习' : '新词';
   updateProgress();
-  // 自动朗读英文（重复）+ 中文
-  speakSequence(w.en, w.cn, session.rate, session.repeat);
+  // 自动朗读（播放已缓存音频）
+  if (item.audio) playWordAudio(item.audio.enUrl, item.audio.zhUrl, session.repeat, session.gap);
 }
 
 function updateProgress() {
@@ -275,12 +255,12 @@ function updateProgress() {
 }
 
 $('#playEnBtn').addEventListener('click', () => {
-  const w = words.find(x => x.id === current.id);
-  speak(w.en, 'en', session.rate, session.repeat);
+  const a = current && current.audio;
+  if (a) { for (let i = 0; i < Math.max(1, session.repeat); i++) playUrl(a.enUrl); }
 });
 $('#playCnBtn').addEventListener('click', () => {
-  const w = words.find(x => x.id === current.id);
-  speak(w.cn, 'zh', session.rate, 1);
+  const a = current && current.audio;
+  if (a) playUrl(a.zhUrl);
 });
 
 $('#nextBtn').addEventListener('click', () => {
