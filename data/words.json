@@ -9,16 +9,16 @@
   {
     "en": "banana",
     "cn": "香蕉",
-    "status": "new",
+    "status": "wrong",
     "streak": 0,
-    "wrongCount": 0
+    "wrongCount": 1
   },
   {
     "en": "cat",
     "cn": "猫",
-    "status": "new",
+    "status": "wrong",
     "streak": 0,
-    "wrongCount": 0
+    "wrongCount": 2
   },
   {
     "en": "dog",
