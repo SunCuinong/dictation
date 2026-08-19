@@ -56,11 +56,13 @@
   {
     "en": "school",
     "cn": "学校",
-    "status": "new",
-    "streak": 0,
+    "status": "learned",
+    "streak": 1,
     "wrongCount": 0,
     "id": "mszr36gcavn6v",
-    "history": []
+    "history": [
+      true
+    ]
   },
   {
     "en": "teacher",
@@ -224,9 +226,10 @@
     "cn": "动物",
     "status": "wrong",
     "streak": 0,
-    "wrongCount": 1,
+    "wrongCount": 2,
     "id": "mszr36gc6mmgl",
     "history": [
+      false,
       false
     ]
   },
@@ -271,9 +274,10 @@
     "cn": "科学",
     "status": "wrong",
     "streak": 0,
-    "wrongCount": 1,
+    "wrongCount": 2,
     "id": "mszr36gcrdd99",
     "history": [
+      false,
       false
     ]
   },
@@ -316,11 +320,13 @@
   {
     "en": "write",
     "cn": "写",
-    "status": "new",
-    "streak": 0,
+    "status": "learned",
+    "streak": 1,
     "wrongCount": 0,
     "id": "mszr36gcrdm5j",
-    "history": []
+    "history": [
+      true
+    ]
   },
   {
     "en": "read",
@@ -353,11 +359,12 @@
     "en": "learn",
     "cn": "学习",
     "status": "wrong",
-    "streak": 0,
+    "streak": 1,
     "wrongCount": 1,
     "id": "mszr36gcvhne7",
     "history": [
-      false
+      false,
+      true
     ]
   },
   {
