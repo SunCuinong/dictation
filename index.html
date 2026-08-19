@@ -9,11 +9,6 @@
 <body>
   <header class="topbar">
     <h1>英文听写工具</h1>
-    <div class="actions" id="navActions">
-      <button id="navHomeBtn" class="btn btn-ghost">首页</button>
-      <button id="navDictBtn" class="btn btn-ghost">题库</button>
-      <button id="navListenBtn" class="btn btn-primary">开始听写</button>
-    </div>
   </header>
 
   <main class="layout">
@@ -95,10 +90,10 @@
       <!-- 统一对答案 -->
       <div class="answer-sheet" id="answerPanel" hidden>
         <h2>听写答案</h2>
-        <p class="sheet-tip">对照下面答案，自评每个单词是否写对，点对应按钮即可。</p>
+        <p class="sheet-tip">对照下面答案，自评每个单词是否写对，点对应按钮。确认无误后点「提交结果」才会更新词库状态。</p>
         <div class="sheet-list" id="sheetList"></div>
         <div class="sheet-actions">
-          <button id="backHomeBtn2" class="btn btn-ghost">返回首页</button>
+          <button id="submitBtn" class="btn btn-primary">提交结果</button>
         </div>
       </div>
     </section>
@@ -106,6 +101,7 @@
     <!-- ============ 题库 ============ -->
     <section id="dictView" class="view" hidden>
       <div class="dict-head">
+        <button id="dictBackBtn" class="btn btn-ghost">← 返回首页</button>
         <h2>题库</h2>
         <div class="dict-tools">
           <button id="exportDictBtn" class="btn btn-ghost">导出</button>
@@ -135,7 +131,7 @@
       <div class="dict-table-wrap">
         <table class="dict-table">
           <thead>
-            <tr><th>英文</th><th>中文</th><th>状态</th><th>连对</th><th>错次</th><th>操作</th></tr>
+            <tr><th>英文</th><th>中文</th><th>状态</th><th>听写记录</th><th>连对</th><th>错次</th><th>操作</th></tr>
           </thead>
           <tbody id="dictBody"></tbody>
         </table>

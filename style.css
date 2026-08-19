@@ -142,6 +142,7 @@ html, body {
 .status-badge.learned { background: #e7f7ef; color: var(--ok); }
 .status-badge.first { background: #eaf0ff; color: var(--primary); }
 .dict-table .row-del { color: var(--bad); border: none; background: none; cursor: pointer; font-size: 13px; }
+.dict-table .hist-col { font-size: 14px; letter-spacing: 1px; white-space: nowrap; min-width: 90px; }
 
 /* ============ 首页 ============ */
 .hero { text-align: center; padding: 12px 0 8px; }

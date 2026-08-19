@@ -52,13 +52,20 @@ const BUILTIN = [
 ];
 
 let words = [];
+function normalizeWord(w) {
+  if (!w.id) w.id = uid();
+  if (!Array.isArray(w.history)) w.history = [];
+  if (typeof w.streak !== 'number') w.streak = 0;
+  if (typeof w.wrongCount !== 'number') w.wrongCount = 0;
+  if (!w.status) w.status = 'new';
+  return w;
+}
 (async function initWords() {
   const loaded = await loadWords();
-  words = loaded && loaded.length
+  words = (loaded && loaded.length
     ? loaded
-    : BUILTIN.map(([en, cn]) => ({ id: uid(), en, cn, status: 'new', streak: 0, wrongCount: 0 }));
-  // 确保每条有 id
-  words.forEach(w => { if (!w.id) w.id = uid(); });
+    : BUILTIN.map(([en, cn]) => ({ en, cn, status: 'new', streak: 0, wrongCount: 0, history: [] })))
+    .map(normalizeWord);
   try { localStorage.setItem(STORE_KEY, JSON.stringify(words)); } catch (e) {}
   renderHome();
   renderDict();
@@ -130,23 +137,22 @@ function shuffle(arr) {
   return arr;
 }
 
-/* ============ 状态更新 ============ */
-function markCorrect(id) {
+/* ============ 状态更新（提交时调用，记录听写历史） ============ */
+function applyResult(id, ok) {
   const w = words.find(x => x.id === id);
   if (!w) return;
-  if (w.status === 'new') { w.status = 'learned'; w.streak = 1; }
-  else if (w.status === 'wrong') {
-    w.streak += 1;
-    if (w.streak >= 3) w.status = 'learned';
+  w.history.push(ok);            // 追加本次结果到历史
+  if (ok) {
+    if (w.status === 'new') { w.status = 'learned'; w.streak = 1; }
+    else if (w.status === 'wrong') {
+      w.streak += 1;
+      if (w.streak >= 3) w.status = 'learned';
+    }
+  } else {
+    w.status = 'wrong';
+    w.streak = 0;
+    w.wrongCount += 1;
   }
-  saveWordsRemote(words);
-}
-function markWrong(id) {
-  const w = words.find(x => x.id === id);
-  if (!w) return;
-  w.status = 'wrong';
-  w.streak = 0;
-  w.wrongCount += 1;
   saveWordsRemote(words);
 }
 
@@ -163,11 +169,9 @@ function showView(v) {
 }
 
 /* ============ 导航 ============ */
-$('#navHomeBtn').addEventListener('click', () => { renderHome(); showView('home'); });
-$('#navDictBtn').addEventListener('click', () => { renderDict(); showView('dict'); });
-$('#navListenBtn').addEventListener('click', () => { showView('listen'); startSession(); });
 $('#homeListenBtn').addEventListener('click', () => { showView('listen'); startSession(); });
 $('#homeDictBtn').addEventListener('click', () => { renderDict(); showView('dict'); });
+$('#dictBackBtn').addEventListener('click', () => { renderHome(); showView('home'); });
 
 /* ============ 首页 ============ */
 function renderHome() {
@@ -305,8 +309,8 @@ function showAnswerSheet() {
       const row = btn.closest('.sheet-row');
       row.querySelectorAll('.g-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      // 应用到状态机
-      if (ok) markCorrect(id); else markWrong(id);
+      // 仅记录自评，提交后才更新状态
+      session.graded[id] = ok;
     });
   });
   updateProgress();
@@ -314,7 +318,16 @@ function showAnswerSheet() {
   $('#progressFill').style.width = '100%';
 }
 
-$('#backHomeBtn2').addEventListener('click', () => { renderHome(); showView('home'); });
+// 提交：根据自评统一更新词库状态
+$('#submitBtn').addEventListener('click', () => {
+  const graded = session.graded;
+  const ids = Object.keys(graded);
+  if (ids.length === 0) { alert('请先对每道题自评（写对/写错）。'); return; }
+  ids.forEach(id => applyResult(id, graded[id]));
+  renderHome();
+  renderDict();
+  showView('home');
+});
 
 /* ============ 题库管理 ============ */
 let dictFilter = 'all';
@@ -340,17 +353,21 @@ function renderDict() {
   const body = $('#dictBody');
   body.innerHTML = '';
   if (filtered.length === 0) {
-    body.innerHTML = `<tr><td colspan="6" style="text-align:center;color:var(--muted);padding:24px;">暂无单词</td></tr>`;
+    body.innerHTML = `<tr><td colspan="7" style="text-align:center;color:var(--muted);padding:24px;">暂无单词</td></tr>`;
     return;
   }
   filtered.forEach(w => {
     const label = w.status === 'new' ? '未听写' : w.status === 'wrong' ? '错词中' : '已掌握';
     const cls = w.status === 'new' ? 'new' : w.status === 'wrong' ? 'wrong' : 'learned';
+    const historyStr = (w.history && w.history.length)
+      ? w.history.map(h => h ? '🟢' : '🔴').join('')
+      : '<span style="color:var(--muted)">—</span>';
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td>${escapeHtml(w.en)}</td>
       <td>${escapeHtml(w.cn)}</td>
       <td><span class="status-badge ${cls}">${label}</span></td>
+      <td class="hist-col" title="每次听写结果：🟢对 🔴错">${historyStr}</td>
       <td>${w.streak}</td>
       <td>${w.wrongCount}</td>
       <td><button class="row-del" data-id="${w.id}">删除</button></td>`;
@@ -390,7 +407,7 @@ $('#addConfirmBtn').addEventListener('click', () => {
   const cn = $('#addCn').value.trim();
   if (!en || !cn) { alert('请填写英文和中文'); return; }
   const list = words.slice();
-  list.push({ id: uid(), en, cn, status: 'new', streak: 0, wrongCount: 0 });
+  list.push({ id: uid(), en, cn, status: 'new', streak: 0, wrongCount: 0, history: [] });
   saveWordsRemote(list);
   $('#addEn').value = ''; $('#addCn').value = '';
   $('#addForm').hidden = true;
@@ -409,7 +426,7 @@ $('#importFile').addEventListener('change', e => {
         const data = JSON.parse(reader.result);
         imported = data.map(d => ({
           id: uid(), en: String(d.en || '').trim(), cn: String(d.cn || d.zh || '').trim(),
-          status: 'new', streak: 0, wrongCount: 0
+          status: 'new', streak: 0, wrongCount: 0, history: []
         }));
       } else {
         reader.result.split('\n').forEach(line => {
@@ -419,7 +436,7 @@ $('#importFile').addEventListener('change', e => {
           if (line.includes(',')) { [en, cn] = line.split(','); }
           else { const m = line.split(/\s+/); en = m[0]; cn = m.slice(1).join(' '); }
           en = (en || '').trim(); cn = (cn || '').trim();
-          if (en && cn) imported.push({ id: uid(), en, cn, status: 'new', streak: 0, wrongCount: 0 });
+          if (en && cn) imported.push({ id: uid(), en, cn, status: 'new', streak: 0, wrongCount: 0, history: [] });
         });
       }
       if (imported.length === 0) { alert('没有解析到有效单词。'); return; }
