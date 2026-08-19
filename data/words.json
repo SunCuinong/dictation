@@ -2,29 +2,35 @@
   {
     "en": "apple",
     "cn": "苹果",
-    "status": "new",
-    "streak": 0,
+    "status": "learned",
+    "streak": 1,
     "wrongCount": 0,
     "id": "mszr36gcpzhvv",
-    "history": []
+    "history": [
+      true
+    ]
   },
   {
     "en": "banana",
     "cn": "香蕉",
-    "status": "new",
+    "status": "wrong",
     "streak": 0,
-    "wrongCount": 0,
+    "wrongCount": 1,
     "id": "mszr36gc7cqtv",
-    "history": []
+    "history": [
+      false
+    ]
   },
   {
     "en": "cat",
     "cn": "猫",
-    "status": "new",
-    "streak": 0,
+    "status": "learned",
+    "streak": 1,
     "wrongCount": 0,
     "id": "mszr36gcq49lm",
-    "history": []
+    "history": [
+      true
+    ]
   },
   {
     "en": "dog",
@@ -384,5 +390,7 @@
     "streak": 0,
     "wrongCount": 0,
     "history": []
+  }
+] "history": []
   }
 ]
