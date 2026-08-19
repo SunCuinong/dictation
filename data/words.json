@@ -1,0 +1,282 @@
+[
+  {
+    "en": "apple",
+    "cn": "苹果",
+    "status": "learned",
+    "streak": 1,
+    "wrongCount": 0
+  },
+  {
+    "en": "banana",
+    "cn": "香蕉",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "cat",
+    "cn": "猫",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "dog",
+    "cn": "狗",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "book",
+    "cn": "书",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "water",
+    "cn": "水",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "school",
+    "cn": "学校",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "teacher",
+    "cn": "老师",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "student",
+    "cn": "学生",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "friend",
+    "cn": "朋友",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "family",
+    "cn": "家庭",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "happy",
+    "cn": "开心的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "red",
+    "cn": "红色",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "blue",
+    "cn": "蓝色",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "green",
+    "cn": "绿色",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "yellow",
+    "cn": "黄色",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "morning",
+    "cn": "早晨",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "evening",
+    "cn": "晚上",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "today",
+    "cn": "今天",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "tomorrow",
+    "cn": "明天",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "computer",
+    "cn": "电脑",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "music",
+    "cn": "音乐",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "sport",
+    "cn": "运动",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "food",
+    "cn": "食物",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "animal",
+    "cn": "动物",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "plant",
+    "cn": "植物",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "weather",
+    "cn": "天气",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "travel",
+    "cn": "旅行",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "language",
+    "cn": "语言",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "science",
+    "cn": "科学",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "history",
+    "cn": "历史",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "math",
+    "cn": "数学",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "english",
+    "cn": "英语",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "chinese",
+    "cn": "中文",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "write",
+    "cn": "写",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "read",
+    "cn": "读",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "listen",
+    "cn": "听",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "speak",
+    "cn": "说",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "learn",
+    "cn": "学习",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  },
+  {
+    "en": "remember",
+    "cn": "记住",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0
+  }
+]

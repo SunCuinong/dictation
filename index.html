@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>英文听写工具</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>英文听写工具</h1>
+    <div class="actions" id="navActions">
+      <button id="navHomeBtn" class="btn btn-ghost">首页</button>
+      <button id="navDictBtn" class="btn btn-ghost">题库</button>
+      <button id="navListenBtn" class="btn btn-primary">开始听写</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- ============ 首页 ============ -->
+    <section id="homeView" class="view">
+      <div class="hero">
+        <h2>英文听写练习</h2>
+        <p class="hero-sub">导入或内置词库，每天听写，自动巩固错词。</p>
+      </div>
+      <div class="home-stats" id="homeStats"></div>
+      <div class="home-actions">
+        <button id="homeListenBtn" class="btn btn-primary btn-block">▶ 开始听写</button>
+        <button id="homeDictBtn" class="btn btn-ghost btn-block">📚 进入题库（查看状态 / 导入新词）</button>
+      </div>
+    </section>
+
+    <!-- ============ 听写 ============ -->
+    <section id="listenView" class="view" hidden>
+      <div class="setup" id="setupPanel">
+        <h2>听写设置</h2>
+        <div class="setup-row">
+          <label for="countInput">本次听写数量</label>
+          <input id="countInput" type="number" min="1" value="30" />
+        </div>
+        <div class="setup-row">
+          <label for="speedSelect">朗读语速</label>
+          <select id="speedSelect">
+            <option value="0.8">慢</option>
+            <option value="1" selected>正常</option>
+            <option value="1.2">快</option>
+          </select>
+        </div>
+        <div class="setup-row">
+          <label for="repeatSelect">每个单词朗读次数</label>
+          <select id="repeatSelect">
+            <option value="1">1 次</option>
+            <option value="2" selected>2 次</option>
+            <option value="3">3 次</option>
+          </select>
+        </div>
+        <div class="setup-info" id="setupInfo"></div>
+        <button id="startBtn" class="btn btn-primary btn-block">生成听写清单</button>
+      </div>
+
+      <div class="session" id="sessionPanel" hidden>
+        <div class="progress">
+          <span id="progressText">0 / 0</span>
+          <div class="progress-bar"><div id="progressFill" class="progress-fill"></div></div>
+        </div>
+        <div class="word-card" id="wordCard">
+          <div class="word-index" id="wordIndex">第 1 个</div>
+          <div class="word-status" id="wordStatus"></div>
+          <div class="word-actions">
+            <button id="playEnBtn" class="btn btn-ghost">🔊 重听英文</button>
+            <button id="playCnBtn" class="btn btn-ghost">🔊 重听中文</button>
+          </div>
+          <div class="auto-tip" id="autoTip">已自动朗读英文与中文 ↑</div>
+        </div>
+        <div class="session-actions">
+          <button id="nextBtn" class="btn btn-primary btn-block">下一题 →</button>
+        </div>
+        <button id="finishEarlyBtn" class="btn btn-link">提前结束并查看答案</button>
+      </div>
+
+      <!-- 统一对答案 -->
+      <div class="answer-sheet" id="answerPanel" hidden>
+        <h2>听写答案</h2>
+        <p class="sheet-tip">对照下面答案，自评每个单词是否写对，点对应按钮即可。</p>
+        <div class="sheet-list" id="sheetList"></div>
+        <div class="sheet-actions">
+          <button id="backHomeBtn2" class="btn btn-ghost">返回首页</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 题库 ============ -->
+    <section id="dictView" class="view" hidden>
+      <div class="dict-head">
+        <h2>题库</h2>
+        <div class="dict-tools">
+          <button id="exportDictBtn" class="btn btn-ghost">导出</button>
+          <button id="importDictBtn" class="btn btn-ghost">导入新词</button>
+          <button id="addWordBtn" class="btn btn-ghost">手动添加</button>
+          <button id="resetStatBtn" class="btn btn-ghost">重置统计</button>
+          <input id="importFile" type="file" accept=".json,.txt" hidden />
+        </div>
+      </div>
+
+      <div class="dict-stats" id="dictStats"></div>
+
+      <div class="add-form" id="addForm" hidden>
+        <input id="addEn" type="text" placeholder="英文单词，如 apple" />
+        <input id="addCn" type="text" placeholder="中文释义，如 苹果" />
+        <button id="addConfirmBtn" class="btn btn-primary">添加</button>
+        <button id="addCancelBtn" class="btn btn-ghost">取消</button>
+      </div>
+
+      <div class="dict-filters">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="new">未听写</button>
+        <button class="filter-btn" data-filter="wrong">错词中</button>
+        <button class="filter-btn" data-filter="learned">已掌握</button>
+      </div>
+
+      <div class="dict-table-wrap">
+        <table class="dict-table">
+          <thead>
+            <tr><th>英文</th><th>中文</th><th>状态</th><th>连对</th><th>错次</th><th>操作</th></tr>
+          </thead>
+          <tbody id="dictBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
