@@ -5,15 +5,19 @@
     "status": "learned",
     "streak": 1,
     "wrongCount": 0,
-    "id": "mszr36gcpzhvv"
+    "id": "mszr36gcpzhvv",
+    "history": []
   },
   {
     "en": "banana",
     "cn": "香蕉",
     "status": "wrong",
-    "streak": 1,
-    "wrongCount": 1,
-    "id": "mszr36gc7cqtv"
+    "streak": 0,
+    "wrongCount": 2,
+    "id": "mszr36gc7cqtv",
+    "history": [
+      false
+    ]
   },
   {
     "en": "cat",
@@ -21,7 +25,8 @@
     "status": "wrong",
     "streak": 2,
     "wrongCount": 2,
-    "id": "mszr36gcq49lm"
+    "id": "mszr36gcq49lm",
+    "history": []
   },
   {
     "en": "dog",
@@ -29,7 +34,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gco88wp"
+    "id": "mszr36gco88wp",
+    "history": []
   },
   {
     "en": "book",
@@ -37,7 +43,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gc07k2j"
+    "id": "mszr36gc07k2j",
+    "history": []
   },
   {
     "en": "water",
@@ -45,7 +52,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcptc9d"
+    "id": "mszr36gcptc9d",
+    "history": []
   },
   {
     "en": "school",
@@ -53,7 +61,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcavn6v"
+    "id": "mszr36gcavn6v",
+    "history": []
   },
   {
     "en": "teacher",
@@ -61,7 +70,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcdg1j8"
+    "id": "mszr36gcdg1j8",
+    "history": []
   },
   {
     "en": "student",
@@ -69,7 +79,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gc2h3us"
+    "id": "mszr36gc2h3us",
+    "history": []
   },
   {
     "en": "friend",
@@ -77,7 +88,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gca9qxa"
+    "id": "mszr36gca9qxa",
+    "history": []
   },
   {
     "en": "family",
@@ -85,7 +97,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcy349z"
+    "id": "mszr36gcy349z",
+    "history": []
   },
   {
     "en": "happy",
@@ -93,7 +106,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gctgebd"
+    "id": "mszr36gctgebd",
+    "history": []
   },
   {
     "en": "red",
@@ -101,7 +115,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gc6erub"
+    "id": "mszr36gc6erub",
+    "history": []
   },
   {
     "en": "blue",
@@ -109,7 +124,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcoyspz"
+    "id": "mszr36gcoyspz",
+    "history": []
   },
   {
     "en": "green",
@@ -117,7 +133,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcxc8pv"
+    "id": "mszr36gcxc8pv",
+    "history": []
   },
   {
     "en": "yellow",
@@ -125,7 +142,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gc6ksrp"
+    "id": "mszr36gc6ksrp",
+    "history": []
   },
   {
     "en": "morning",
@@ -133,7 +151,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gc01e0q"
+    "id": "mszr36gc01e0q",
+    "history": []
   },
   {
     "en": "evening",
@@ -141,7 +160,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcw4yhu"
+    "id": "mszr36gcw4yhu",
+    "history": []
   },
   {
     "en": "today",
@@ -149,7 +169,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gce12bu"
+    "id": "mszr36gce12bu",
+    "history": []
   },
   {
     "en": "tomorrow",
@@ -157,7 +178,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcxrs73"
+    "id": "mszr36gcxrs73",
+    "history": []
   },
   {
     "en": "computer",
@@ -165,7 +187,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcmtmi6"
+    "id": "mszr36gcmtmi6",
+    "history": []
   },
   {
     "en": "music",
@@ -173,7 +196,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcuzogm"
+    "id": "mszr36gcuzogm",
+    "history": []
   },
   {
     "en": "sport",
@@ -181,15 +205,19 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gc3dhix"
+    "id": "mszr36gc3dhix",
+    "history": []
   },
   {
     "en": "food",
     "cn": "食物",
     "status": "wrong",
-    "streak": 0,
+    "streak": 1,
     "wrongCount": 2,
-    "id": "mszr36gc7ur8c"
+    "id": "mszr36gc7ur8c",
+    "history": [
+      true
+    ]
   },
   {
     "en": "animal",
@@ -197,7 +225,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gc6mmgl"
+    "id": "mszr36gc6mmgl",
+    "history": []
   },
   {
     "en": "plant",
@@ -205,7 +234,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gc9a200"
+    "id": "mszr36gc9a200",
+    "history": []
   },
   {
     "en": "weather",
@@ -213,7 +243,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gc1yeka"
+    "id": "mszr36gc1yeka",
+    "history": []
   },
   {
     "en": "travel",
@@ -221,7 +252,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gc2wfu4"
+    "id": "mszr36gc2wfu4",
+    "history": []
   },
   {
     "en": "language",
@@ -229,7 +261,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gc4kabg"
+    "id": "mszr36gc4kabg",
+    "history": []
   },
   {
     "en": "science",
@@ -237,7 +270,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcrdd99"
+    "id": "mszr36gcrdd99",
+    "history": []
   },
   {
     "en": "history",
@@ -245,7 +279,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gchq9u2"
+    "id": "mszr36gchq9u2",
+    "history": []
   },
   {
     "en": "math",
@@ -253,7 +288,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gc67z4n"
+    "id": "mszr36gc67z4n",
+    "history": []
   },
   {
     "en": "english",
@@ -261,7 +297,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gc4r6r8"
+    "id": "mszr36gc4r6r8",
+    "history": []
   },
   {
     "en": "chinese",
@@ -269,7 +306,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcwjnap"
+    "id": "mszr36gcwjnap",
+    "history": []
   },
   {
     "en": "write",
@@ -277,7 +315,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcrdm5j"
+    "id": "mszr36gcrdm5j",
+    "history": []
   },
   {
     "en": "read",
@@ -285,7 +324,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gc3ionk"
+    "id": "mszr36gc3ionk",
+    "history": []
   },
   {
     "en": "listen",
@@ -293,7 +333,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gckqx7t"
+    "id": "mszr36gckqx7t",
+    "history": []
   },
   {
     "en": "speak",
@@ -301,7 +342,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcgou3i"
+    "id": "mszr36gcgou3i",
+    "history": []
   },
   {
     "en": "learn",
@@ -309,7 +351,8 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcvhne7"
+    "id": "mszr36gcvhne7",
+    "history": []
   },
   {
     "en": "remember",
@@ -317,6 +360,7 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gclk0oy"
+    "id": "mszr36gclk0oy",
+    "history": []
   }
 ]
