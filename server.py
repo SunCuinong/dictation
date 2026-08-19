@@ -13,16 +13,17 @@ import os
 import json
 import subprocess
 import asyncio
-import functools
-
-from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse, parse_qs
+
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer, SimpleHTTPRequestHandler
 
 import edge_tts
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 WORDS_FILE = os.path.join(DATA_DIR, "words.json")
+# 静态文件根目录：本目录（外部通过 /dictation/ 访问）
+STATIC_DIR = BASE_DIR
 
 # 语音音色：英文 / 中文
 VOICE_EN = "en-US-JennyNeural"
@@ -121,8 +122,60 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Access-Control-Allow-Headers", "Content-Type")
         self.end_headers()
 
+    def _serve_static(self):
+        # 仅允许 /dictation/ 前缀，避免暴露仓库其他文件
+        parsed = urlparse(self.path)
+        path = parsed.path
+        if path == "/" or path == "":
+            path = "/dictation/index.html"
+        if not path.startswith("/dictation/"):
+            self._send_json({"error": "not found"}, 404)
+            return
+        # 去掉 /dictation/ 前缀，映射到 STATIC_DIR
+        rel = path[len("/dictation/"):]
+        if rel == "" or rel.endswith("/"):
+            rel = rel + "index.html"
+        # 防目录穿越
+        rel = rel.replace("\\", "/")
+        safe = os.path.normpath(rel)
+        if safe.startswith("..") or os.path.isabs(safe):
+            self._send_json({"error": "forbidden"}, 403)
+            return
+        fpath = os.path.join(STATIC_DIR, safe)
+        if not os.path.isfile(fpath):
+            self._send_json({"error": "not found"}, 404)
+            return
+        # 简单 MIME
+        ext = os.path.splitext(fpath)[1].lower()
+        mime = {
+            ".html": "text/html; charset=utf-8",
+            ".css": "text/css; charset=utf-8",
+            ".js": "application/javascript; charset=utf-8",
+            ".json": "application/json; charset=utf-8",
+            ".png": "image/png", ".jpg": "image/jpeg", ".svg": "image/svg+xml",
+            ".ico": "image/x-icon",
+        }.get(ext, "application/octet-stream")
+        try:
+            with open(fpath, "rb") as f:
+                data = f.read()
+        except Exception:
+            self._send_json({"error": "read error"}, 500)
+            return
+        self.send_response(200)
+        self.send_header("Content-Type", mime)
+        self.send_header("Content-Length", str(len(data)))
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.end_headers()
+        self.wfile.write(data)
+
     def do_GET(self):
         parsed = urlparse(self.path)
+        if parsed.path.startswith("/api/"):
+            self._handle_api_get(parsed)
+            return
+        self._serve_static()
+
+    def _handle_api_get(self, parsed):
         if parsed.path == "/api/tts":
             qs = parse_qs(parsed.query)
             text = qs.get("text", [""])[0]
@@ -177,7 +230,9 @@ class Handler(BaseHTTPRequestHandler):
 def main():
     ensure_words_file()
     server = ThreadingHTTPServer(("0.0.0.0", PORT), Handler)
-    print(f"dictation server running at http://localhost:{PORT}")
+    print(f"dictation server running")
+    print(f"  本机:    http://localhost:{PORT}/dictation/")
+    print(f"  局域网:  http://<本机IP>:{PORT}/dictation/   (iPad 同 WiFi 访问)")
     try:
         server.serve_forever()
     except KeyboardInterrupt:
