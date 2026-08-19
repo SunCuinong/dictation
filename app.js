@@ -29,6 +29,7 @@ async function loadWords() {
 // 保存到云端；同时写一份本地回退
 function saveWordsRemote(list) {
   words = list;
+  _dirty = true;
   try { localStorage.setItem(STORE_KEY, JSON.stringify(list)); } catch (e) {}
   // 异步推送，不阻塞 UI
   fetch(API_BASE + '/api/words', {
@@ -52,6 +53,8 @@ const BUILTIN = [
 ];
 
 let words = [];
+let _initialized = false; // 云端加载是否完成
+let _dirty = false;       // 用户是否已做过修改（防止异步加载覆盖）
 function normalizeWord(w) {
   if (!w.id) w.id = uid();
   if (!Array.isArray(w.history)) w.history = [];
@@ -62,10 +65,13 @@ function normalizeWord(w) {
 }
 (async function initWords() {
   const loaded = await loadWords();
+  // 若用户已在加载完成前改过词库，则保留其改动，不被旧快照覆盖
+  if (_dirty) return;
   words = (loaded && loaded.length
     ? loaded
     : BUILTIN.map(([en, cn]) => ({ en, cn, status: 'new', streak: 0, wrongCount: 0, history: [] })))
     .map(normalizeWord);
+  _initialized = true;
   try { localStorage.setItem(STORE_KEY, JSON.stringify(words)); } catch (e) {}
   renderHome();
   renderDict();
@@ -116,25 +122,16 @@ async function playWordAudio(enUrl, zhUrl, repeat, gap) {
 
 /* ============ 听写清单生成 ============ */
 function buildSession(count) {
+  // 按词库当前顺序从头取：优先错词，其次新词，最后已掌握（各组内均保持原顺序）
   const wrong = words.filter(w => w.status === 'wrong');
   const fresh = words.filter(w => w.status === 'new');
   const learned = words.filter(w => w.status === 'learned');
   const pool = [];
-  shuffle(wrong).forEach(w => pool.push(w));
-  shuffle(fresh).forEach(w => pool.push(w));
-  if (pool.length < count) {
-    learned.sort((a, b) => b.wrongCount - a.wrongCount);
-    learned.forEach(w => { if (pool.length < count) pool.push(w); });
-  }
+  wrong.forEach(w => pool.push(w));
+  fresh.forEach(w => pool.push(w));
+  learned.forEach(w => { if (pool.length < count) pool.push(w); });
   // 记录原始状态用于汇总判断
   return pool.slice(0, count).map(w => ({ id: w.id, firstStatus: w.status }));
-}
-function shuffle(arr) {
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
 }
 
 /* ============ 状态更新（提交时调用，记录听写历史） ============ */
@@ -379,6 +376,8 @@ function renderDict() {
       if (confirm('确定删除该单词？')) {
         saveWordsRemote(words.filter(x => x.id !== id));
         renderDict();
+        renderHome();
+        updateSetupInfo();
       }
     });
   });
@@ -412,6 +411,8 @@ $('#addConfirmBtn').addEventListener('click', () => {
   $('#addEn').value = ''; $('#addCn').value = '';
   $('#addForm').hidden = true;
   renderDict();
+  renderHome();
+  updateSetupInfo();
 });
 
 $('#importDictBtn').addEventListener('click', () => $('#importFile').click());
@@ -443,6 +444,8 @@ $('#importFile').addEventListener('change', e => {
       if (confirm(`成功解析 ${imported.length} 个单词，是否追加到现有词库？`)) {
         saveWordsRemote(words.concat(imported));
         renderDict();
+        renderHome();
+        updateSetupInfo();
       }
     } catch (err) {
       alert('导入失败：文件格式不正确。' + err.message);
@@ -463,11 +466,13 @@ $('#exportDictBtn').addEventListener('click', () => {
 });
 
 $('#resetStatBtn').addEventListener('click', () => {
-  if (!confirm('将把所有单词状态重置为「未听写」，确定？')) return;
+  if (!confirm('将把所有单词状态重置为「未听写」，并清空听写记录，确定？')) return;
   const list = words.slice();
-  list.forEach(w => { w.status = 'new'; w.streak = 0; w.wrongCount = 0; });
+  list.forEach(w => { w.status = 'new'; w.streak = 0; w.wrongCount = 0; w.history = []; });
   saveWordsRemote(list);
   renderDict();
+  renderHome();
+  updateSetupInfo();
 });
 
 /* ============ 初始化 ============ */
