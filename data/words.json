@@ -2,35 +2,29 @@
   {
     "en": "apple",
     "cn": "苹果",
-    "status": "learned",
-    "streak": 1,
+    "status": "new",
+    "streak": 0,
     "wrongCount": 0,
     "id": "mszr36gcpzhvv",
-    "history": [
-      true
-    ]
+    "history": []
   },
   {
     "en": "banana",
     "cn": "香蕉",
-    "status": "wrong",
+    "status": "new",
     "streak": 0,
-    "wrongCount": 1,
+    "wrongCount": 0,
     "id": "mszr36gc7cqtv",
-    "history": [
-      false
-    ]
+    "history": []
   },
   {
     "en": "cat",
     "cn": "猫",
-    "status": "learned",
-    "streak": 1,
+    "status": "new",
+    "streak": 0,
     "wrongCount": 0,
     "id": "mszr36gcq49lm",
-    "history": [
-      true
-    ]
+    "history": []
   },
   {
     "en": "dog",
@@ -66,9 +60,7 @@
     "streak": 0,
     "wrongCount": 0,
     "id": "mszr36gcavn6v",
-    "history": [
-      true
-    ]
+    "history": []
   },
   {
     "en": "teacher",
@@ -77,9 +69,7 @@
     "streak": 0,
     "wrongCount": 0,
     "id": "mszr36gcdg1j8",
-    "history": [
-      true
-    ]
+    "history": []
   },
   {
     "en": "student",
@@ -178,9 +168,7 @@
     "streak": 0,
     "wrongCount": 0,
     "id": "mszr36gce12bu",
-    "history": [
-      true
-    ]
+    "history": []
   },
   {
     "en": "tomorrow",
@@ -234,10 +222,7 @@
     "streak": 0,
     "wrongCount": 0,
     "id": "mszr36gc6mmgl",
-    "history": [
-      false,
-      false
-    ]
+    "history": []
   },
   {
     "en": "plant",
@@ -282,10 +267,7 @@
     "streak": 0,
     "wrongCount": 0,
     "id": "mszr36gcrdd99",
-    "history": [
-      false,
-      false
-    ]
+    "history": []
   },
   {
     "en": "history",
@@ -330,9 +312,7 @@
     "streak": 0,
     "wrongCount": 0,
     "id": "mszr36gcrdm5j",
-    "history": [
-      true
-    ]
+    "history": []
   },
   {
     "en": "read",
@@ -368,10 +348,7 @@
     "streak": 0,
     "wrongCount": 0,
     "id": "mszr36gcvhne7",
-    "history": [
-      false,
-      true
-    ]
+    "history": []
   },
   {
     "en": "remember",
@@ -390,7 +367,5 @@
     "streak": 0,
     "wrongCount": 0,
     "history": []
-  }
-] "history": []
   }
 ]
