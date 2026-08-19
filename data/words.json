@@ -56,8 +56,8 @@
   {
     "en": "school",
     "cn": "学校",
-    "status": "learned",
-    "streak": 1,
+    "status": "new",
+    "streak": 0,
     "wrongCount": 0,
     "id": "mszr36gcavn6v",
     "history": [
@@ -67,8 +67,8 @@
   {
     "en": "teacher",
     "cn": "老师",
-    "status": "learned",
-    "streak": 1,
+    "status": "new",
+    "streak": 0,
     "wrongCount": 0,
     "id": "mszr36gcdg1j8",
     "history": [
@@ -168,8 +168,8 @@
   {
     "en": "today",
     "cn": "今天",
-    "status": "learned",
-    "streak": 1,
+    "status": "new",
+    "streak": 0,
     "wrongCount": 0,
     "id": "mszr36gce12bu",
     "history": [
@@ -224,9 +224,9 @@
   {
     "en": "animal",
     "cn": "动物",
-    "status": "wrong",
+    "status": "new",
     "streak": 0,
-    "wrongCount": 2,
+    "wrongCount": 0,
     "id": "mszr36gc6mmgl",
     "history": [
       false,
@@ -272,9 +272,9 @@
   {
     "en": "science",
     "cn": "科学",
-    "status": "wrong",
+    "status": "new",
     "streak": 0,
-    "wrongCount": 2,
+    "wrongCount": 0,
     "id": "mszr36gcrdd99",
     "history": [
       false,
@@ -320,8 +320,8 @@
   {
     "en": "write",
     "cn": "写",
-    "status": "learned",
-    "streak": 1,
+    "status": "new",
+    "streak": 0,
     "wrongCount": 0,
     "id": "mszr36gcrdm5j",
     "history": [
@@ -358,9 +358,9 @@
   {
     "en": "learn",
     "cn": "学习",
-    "status": "wrong",
-    "streak": 1,
-    "wrongCount": 1,
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
     "id": "mszr36gcvhne7",
     "history": [
       false,
