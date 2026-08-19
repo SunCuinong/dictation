@@ -186,9 +186,9 @@
   {
     "en": "food",
     "cn": "食物",
-    "status": "new",
+    "status": "wrong",
     "streak": 0,
-    "wrongCount": 0,
+    "wrongCount": 1,
     "id": "mszr36gc7ur8c"
   },
   {
