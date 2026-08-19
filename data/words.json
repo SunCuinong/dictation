@@ -1,344 +1,155 @@
 [
   {
-    "en": "apple",
-    "cn": "苹果",
+    "en": "person",
+    "cn": "人",
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcpzhvv",
+    "id": "ket0000",
     "history": []
   },
   {
-    "en": "banana",
-    "cn": "香蕉",
+    "en": "tree",
+    "cn": "树",
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gc7cqtv",
+    "id": "ket0001",
     "history": []
   },
   {
-    "en": "cat",
-    "cn": "猫",
+    "en": "rain",
+    "cn": "雨",
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcq49lm",
+    "id": "ket0002",
     "history": []
   },
   {
-    "en": "dog",
-    "cn": "狗",
+    "en": "geography",
+    "cn": "地理",
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gco88wp",
+    "id": "ket0003",
     "history": []
   },
   {
-    "en": "book",
-    "cn": "书",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gc07k2j",
-    "history": []
-  },
-  {
-    "en": "water",
-    "cn": "水",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gcptc9d",
-    "history": []
-  },
-  {
-    "en": "school",
-    "cn": "学校",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gcavn6v",
-    "history": []
-  },
-  {
-    "en": "teacher",
-    "cn": "老师",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gcdg1j8",
-    "history": []
-  },
-  {
-    "en": "student",
-    "cn": "学生",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gc2h3us",
-    "history": []
-  },
-  {
-    "en": "friend",
-    "cn": "朋友",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gca9qxa",
-    "history": []
-  },
-  {
-    "en": "family",
-    "cn": "家庭",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gcy349z",
-    "history": []
-  },
-  {
-    "en": "happy",
-    "cn": "开心的",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gctgebd",
-    "history": []
-  },
-  {
-    "en": "red",
-    "cn": "红色",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gc6erub",
-    "history": []
-  },
-  {
-    "en": "blue",
-    "cn": "蓝色",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gcoyspz",
-    "history": []
-  },
-  {
-    "en": "green",
-    "cn": "绿色",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gcxc8pv",
-    "history": []
-  },
-  {
-    "en": "yellow",
-    "cn": "黄色",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gc6ksrp",
-    "history": []
-  },
-  {
-    "en": "morning",
-    "cn": "早晨",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gc01e0q",
-    "history": []
-  },
-  {
-    "en": "evening",
-    "cn": "晚上",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gcw4yhu",
-    "history": []
-  },
-  {
-    "en": "today",
-    "cn": "今天",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gce12bu",
-    "history": []
-  },
-  {
-    "en": "tomorrow",
-    "cn": "明天",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gcxrs73",
-    "history": []
-  },
-  {
-    "en": "computer",
-    "cn": "电脑",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gcmtmi6",
-    "history": []
-  },
-  {
-    "en": "music",
-    "cn": "音乐",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gcuzogm",
-    "history": []
-  },
-  {
-    "en": "sport",
-    "cn": "运动",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gc3dhix",
-    "history": []
-  },
-  {
-    "en": "food",
-    "cn": "食物",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gc7ur8c",
-    "history": []
-  },
-  {
-    "en": "animal",
-    "cn": "动物",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gc6mmgl",
-    "history": []
-  },
-  {
-    "en": "plant",
-    "cn": "植物",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gc9a200",
-    "history": []
-  },
-  {
-    "en": "weather",
-    "cn": "天气",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gc1yeka",
-    "history": []
-  },
-  {
-    "en": "travel",
-    "cn": "旅行",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gc2wfu4",
-    "history": []
-  },
-  {
-    "en": "language",
-    "cn": "语言",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gc4kabg",
-    "history": []
-  },
-  {
-    "en": "science",
-    "cn": "科学",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gcrdd99",
-    "history": []
-  },
-  {
-    "en": "history",
-    "cn": "历史",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gchq9u2",
-    "history": []
-  },
-  {
-    "en": "math",
-    "cn": "数学",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gc67z4n",
-    "history": []
-  },
-  {
-    "en": "english",
-    "cn": "英语",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gc4r6r8",
-    "history": []
-  },
-  {
-    "en": "chinese",
-    "cn": "中文",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gcwjnap",
-    "history": []
-  },
-  {
-    "en": "write",
-    "cn": "写",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gcrdm5j",
-    "history": []
-  },
-  {
-    "en": "read",
-    "cn": "读",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gc3ionk",
-    "history": []
-  },
-  {
-    "en": "listen",
-    "cn": "听",
-    "status": "new",
-    "streak": 0,
-    "wrongCount": 0,
-    "id": "mszr36gckqx7t",
-    "history": []
-  },
-  {
-    "en": "speak",
+    "en": "say",
     "cn": "说",
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcgou3i",
+    "id": "ket0004",
+    "history": []
+  },
+  {
+    "en": "dirty",
+    "cn": "脏的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0005",
+    "history": []
+  },
+  {
+    "en": "restaurant",
+    "cn": "餐馆",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0006",
+    "history": []
+  },
+  {
+    "en": "letter",
+    "cn": "字母",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0007",
+    "history": []
+  },
+  {
+    "en": "short",
+    "cn": "短的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0008",
+    "history": []
+  },
+  {
+    "en": "chicken",
+    "cn": "鸡肉",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0009",
+    "history": []
+  },
+  {
+    "en": "hospital",
+    "cn": "医院",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0010",
+    "history": []
+  },
+  {
+    "en": "PE",
+    "cn": "体育",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0011",
+    "history": []
+  },
+  {
+    "en": "post",
+    "cn": "邮政",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0012",
+    "history": []
+  },
+  {
+    "en": "find",
+    "cn": "找到",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0013",
+    "history": []
+  },
+  {
+    "en": "flower",
+    "cn": "花",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0014",
+    "history": []
+  },
+  {
+    "en": "sky",
+    "cn": "天空",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0015",
+    "history": []
+  },
+  {
+    "en": "study",
+    "cn": "学习",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0016",
     "history": []
   },
   {
@@ -347,7 +158,709 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gcvhne7",
+    "id": "ket0017",
+    "history": []
+  },
+  {
+    "en": "taste",
+    "cn": "尝",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0018",
+    "history": []
+  },
+  {
+    "en": "slow",
+    "cn": "慢的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0019",
+    "history": []
+  },
+  {
+    "en": "grandfather",
+    "cn": "祖父",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0020",
+    "history": []
+  },
+  {
+    "en": "park",
+    "cn": "公园",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0021",
+    "history": []
+  },
+  {
+    "en": "yellow",
+    "cn": "黄色",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0022",
+    "history": []
+  },
+  {
+    "en": "cat",
+    "cn": "猫",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0023",
+    "history": []
+  },
+  {
+    "en": "message",
+    "cn": "信息",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0024",
+    "history": []
+  },
+  {
+    "en": "home",
+    "cn": "家",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0025",
+    "history": []
+  },
+  {
+    "en": "snow",
+    "cn": "雪",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0026",
+    "history": []
+  },
+  {
+    "en": "size",
+    "cn": "尺寸",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0027",
+    "history": []
+  },
+  {
+    "en": "hungry",
+    "cn": "饥饿的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0028",
+    "history": []
+  },
+  {
+    "en": "ask",
+    "cn": "问",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0029",
+    "history": []
+  },
+  {
+    "en": "bus",
+    "cn": "公交车",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0030",
+    "history": []
+  },
+  {
+    "en": "river",
+    "cn": "河",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0031",
+    "history": []
+  },
+  {
+    "en": "fly",
+    "cn": "飞",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0032",
+    "history": []
+  },
+  {
+    "en": "family",
+    "cn": "家庭",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0033",
+    "history": []
+  },
+  {
+    "en": "want",
+    "cn": "想要",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0034",
+    "history": []
+  },
+  {
+    "en": "room",
+    "cn": "房间",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0035",
+    "history": []
+  },
+  {
+    "en": "run",
+    "cn": "跑",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0036",
+    "history": []
+  },
+  {
+    "en": "finish",
+    "cn": "完成",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0037",
+    "history": []
+  },
+  {
+    "en": "table",
+    "cn": "桌子",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0038",
+    "history": []
+  },
+  {
+    "en": "well",
+    "cn": "健康的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0039",
+    "history": []
+  },
+  {
+    "en": "floor",
+    "cn": "地板",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0040",
+    "history": []
+  },
+  {
+    "en": "know",
+    "cn": "知道",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0041",
+    "history": []
+  },
+  {
+    "en": "eye",
+    "cn": "眼睛",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0042",
+    "history": []
+  },
+  {
+    "en": "draw",
+    "cn": "画",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0043",
+    "history": []
+  },
+  {
+    "en": "animal",
+    "cn": "动物",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0044",
+    "history": []
+  },
+  {
+    "en": "body",
+    "cn": "身体",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0045",
+    "history": []
+  },
+  {
+    "en": "new",
+    "cn": "新的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0046",
+    "history": []
+  },
+  {
+    "en": "teacher",
+    "cn": "老师",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0047",
+    "history": []
+  },
+  {
+    "en": "town",
+    "cn": "城镇",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0048",
+    "history": []
+  },
+  {
+    "en": "long",
+    "cn": "长的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0049",
+    "history": []
+  },
+  {
+    "en": "television",
+    "cn": "电视",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0050",
+    "history": []
+  },
+  {
+    "en": "lesson",
+    "cn": "课",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0051",
+    "history": []
+  },
+  {
+    "en": "arrive",
+    "cn": "到达",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0052",
+    "history": []
+  },
+  {
+    "en": "hat",
+    "cn": "帽子",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0053",
+    "history": []
+  },
+  {
+    "en": "sugar",
+    "cn": "糖",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0054",
+    "history": []
+  },
+  {
+    "en": "call",
+    "cn": "打电话",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0055",
+    "history": []
+  },
+  {
+    "en": "white",
+    "cn": "白色",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0056",
+    "history": []
+  },
+  {
+    "en": "green",
+    "cn": "绿色",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0057",
+    "history": []
+  },
+  {
+    "en": "blue",
+    "cn": "蓝色",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0058",
+    "history": []
+  },
+  {
+    "en": "pen",
+    "cn": "钢笔",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0059",
+    "history": []
+  },
+  {
+    "en": "sport",
+    "cn": "运动",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0060",
+    "history": []
+  },
+  {
+    "en": "thirsty",
+    "cn": "口渴的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0061",
+    "history": []
+  },
+  {
+    "en": "week",
+    "cn": "周",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0062",
+    "history": []
+  },
+  {
+    "en": "year",
+    "cn": "年",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0063",
+    "history": []
+  },
+  {
+    "en": "song",
+    "cn": "歌",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0064",
+    "history": []
+  },
+  {
+    "en": "hope",
+    "cn": "希望",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0065",
+    "history": []
+  },
+  {
+    "en": "closed",
+    "cn": "关着的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0066",
+    "history": []
+  },
+  {
+    "en": "basketball",
+    "cn": "篮球",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0067",
+    "history": []
+  },
+  {
+    "en": "child",
+    "cn": "孩子",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0068",
+    "history": []
+  },
+  {
+    "en": "drink",
+    "cn": "喝",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0069",
+    "history": []
+  },
+  {
+    "en": "grandmother",
+    "cn": "祖母",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0070",
+    "history": []
+  },
+  {
+    "en": "rice",
+    "cn": "米饭",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0071",
+    "history": []
+  },
+  {
+    "en": "dinner",
+    "cn": "晚餐",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0072",
+    "history": []
+  },
+  {
+    "en": "cold",
+    "cn": "冷的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0073",
+    "history": []
+  },
+  {
+    "en": "language",
+    "cn": "语言",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0074",
+    "history": []
+  },
+  {
+    "en": "sentence",
+    "cn": "句子",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0075",
+    "history": []
+  },
+  {
+    "en": "mountain",
+    "cn": "山",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0076",
+    "history": []
+  },
+  {
+    "en": "train",
+    "cn": "火车",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0077",
+    "history": []
+  },
+  {
+    "en": "pocket",
+    "cn": "口袋",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0078",
+    "history": []
+  },
+  {
+    "en": "early",
+    "cn": "早的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0079",
+    "history": []
+  },
+  {
+    "en": "key",
+    "cn": "钥匙",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0080",
+    "history": []
+  },
+  {
+    "en": "school",
+    "cn": "学校",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0081",
+    "history": []
+  },
+  {
+    "en": "late",
+    "cn": "晚的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0082",
+    "history": []
+  },
+  {
+    "en": "question",
+    "cn": "问题",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0083",
+    "history": []
+  },
+  {
+    "en": "hour",
+    "cn": "小时",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0084",
+    "history": []
+  },
+  {
+    "en": "road",
+    "cn": "道路",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0085",
+    "history": []
+  },
+  {
+    "en": "shirt",
+    "cn": "衬衫",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0086",
+    "history": []
+  },
+  {
+    "en": "lose",
+    "cn": "丢失",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0087",
+    "history": []
+  },
+  {
+    "en": "head",
+    "cn": "头",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0088",
+    "history": []
+  },
+  {
+    "en": "good",
+    "cn": "好的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0089",
+    "history": []
+  },
+  {
+    "en": "write",
+    "cn": "写",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0090",
+    "history": []
+  },
+  {
+    "en": "change",
+    "cn": "改变",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0091",
+    "history": []
+  },
+  {
+    "en": "shop",
+    "cn": "商店",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0092",
+    "history": []
+  },
+  {
+    "en": "sea",
+    "cn": "海",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0093",
+    "history": []
+  },
+  {
+    "en": "nose",
+    "cn": "鼻子",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0094",
+    "history": []
+  },
+  {
+    "en": "smell",
+    "cn": "闻",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0095",
     "history": []
   },
   {
@@ -356,16 +869,1987 @@
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
-    "id": "mszr36gclk0oy",
+    "id": "ket0096",
     "history": []
   },
   {
-    "id": "mszu0iuaq2zp8",
-    "en": "1",
-    "cn": "1",
+    "en": "leg",
+    "cn": "腿",
     "status": "new",
     "streak": 0,
     "wrongCount": 0,
+    "id": "ket0097",
+    "history": []
+  },
+  {
+    "en": "ear",
+    "cn": "耳朵",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0098",
+    "history": []
+  },
+  {
+    "en": "history",
+    "cn": "历史",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0099",
+    "history": []
+  },
+  {
+    "en": "strong",
+    "cn": "强壮的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0100",
+    "history": []
+  },
+  {
+    "en": "sing",
+    "cn": "唱歌",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0101",
+    "history": []
+  },
+  {
+    "en": "brush",
+    "cn": "刷",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0102",
+    "history": []
+  },
+  {
+    "en": "swimming",
+    "cn": "游泳",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0103",
+    "history": []
+  },
+  {
+    "en": "clean",
+    "cn": "干净的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0104",
+    "history": []
+  },
+  {
+    "en": "homework",
+    "cn": "家庭作业",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0105",
+    "history": []
+  },
+  {
+    "en": "window",
+    "cn": "窗户",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0106",
+    "history": []
+  },
+  {
+    "en": "card",
+    "cn": "卡片",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0107",
+    "history": []
+  },
+  {
+    "en": "cloud",
+    "cn": "云",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0108",
+    "history": []
+  },
+  {
+    "en": "mother",
+    "cn": "母亲",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0109",
+    "history": []
+  },
+  {
+    "en": "menu",
+    "cn": "菜单",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0110",
+    "history": []
+  },
+  {
+    "en": "number",
+    "cn": "数字",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0111",
+    "history": []
+  },
+  {
+    "en": "sad",
+    "cn": "伤心的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0112",
+    "history": []
+  },
+  {
+    "en": "gift",
+    "cn": "礼物",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0113",
+    "history": []
+  },
+  {
+    "en": "play",
+    "cn": "玩",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0114",
+    "history": []
+  },
+  {
+    "en": "month",
+    "cn": "月",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0115",
+    "history": []
+  },
+  {
+    "en": "black",
+    "cn": "黑色",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0116",
+    "history": []
+  },
+  {
+    "en": "garden",
+    "cn": "花园",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0117",
+    "history": []
+  },
+  {
+    "en": "tell",
+    "cn": "告诉",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0118",
+    "history": []
+  },
+  {
+    "en": "problem",
+    "cn": "难题",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0119",
+    "history": []
+  },
+  {
+    "en": "father",
+    "cn": "父亲",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0120",
+    "history": []
+  },
+  {
+    "en": "doctor",
+    "cn": "医生",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0121",
+    "history": []
+  },
+  {
+    "en": "woman",
+    "cn": "女人",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0122",
+    "history": []
+  },
+  {
+    "en": "brother",
+    "cn": "兄弟",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0123",
+    "history": []
+  },
+  {
+    "en": "time",
+    "cn": "时间",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0124",
+    "history": []
+  },
+  {
+    "en": "show",
+    "cn": "展示",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0125",
+    "history": []
+  },
+  {
+    "en": "bad",
+    "cn": "坏的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0126",
+    "history": []
+  },
+  {
+    "en": "buy",
+    "cn": "买",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0127",
+    "history": []
+  },
+  {
+    "en": "people",
+    "cn": "人们",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0128",
+    "history": []
+  },
+  {
+    "en": "small",
+    "cn": "小的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0129",
+    "history": []
+  },
+  {
+    "en": "boy",
+    "cn": "男孩",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0130",
+    "history": []
+  },
+  {
+    "en": "class",
+    "cn": "班级",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0131",
+    "history": []
+  },
+  {
+    "en": "toothbrush",
+    "cn": "牙刷",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0132",
+    "history": []
+  },
+  {
+    "en": "important",
+    "cn": "重要的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0133",
+    "history": []
+  },
+  {
+    "en": "sock",
+    "cn": "袜子",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0134",
+    "history": []
+  },
+  {
+    "en": "cook",
+    "cn": "烹饪",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0135",
+    "history": []
+  },
+  {
+    "en": "shoe",
+    "cn": "鞋",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0136",
+    "history": []
+  },
+  {
+    "en": "water",
+    "cn": "水",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0137",
+    "history": []
+  },
+  {
+    "en": "bag",
+    "cn": "包",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0138",
+    "history": []
+  },
+  {
+    "en": "sun",
+    "cn": "太阳",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0139",
+    "history": []
+  },
+  {
+    "en": "street",
+    "cn": "街道",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0140",
+    "history": []
+  },
+  {
+    "en": "see",
+    "cn": "看见",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0141",
+    "history": []
+  },
+  {
+    "en": "soup",
+    "cn": "汤",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0142",
+    "history": []
+  },
+  {
+    "en": "do",
+    "cn": "做",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0143",
+    "history": []
+  },
+  {
+    "en": "forget",
+    "cn": "忘记",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0144",
+    "history": []
+  },
+  {
+    "en": "game",
+    "cn": "游戏",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0145",
+    "history": []
+  },
+  {
+    "en": "meal",
+    "cn": "一顿饭",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0146",
+    "history": []
+  },
+  {
+    "en": "world",
+    "cn": "世界",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0147",
+    "history": []
+  },
+  {
+    "en": "arm",
+    "cn": "手臂",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0148",
+    "history": []
+  },
+  {
+    "en": "poor",
+    "cn": "贫穷的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0149",
+    "history": []
+  },
+  {
+    "en": "horse",
+    "cn": "马",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0150",
+    "history": []
+  },
+  {
+    "en": "happy",
+    "cn": "开心的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0151",
+    "history": []
+  },
+  {
+    "en": "ready",
+    "cn": "准备好的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0152",
+    "history": []
+  },
+  {
+    "en": "hear",
+    "cn": "听见",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0153",
+    "history": []
+  },
+  {
+    "en": "computer",
+    "cn": "电脑",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0154",
+    "history": []
+  },
+  {
+    "en": "tomorrow",
+    "cn": "明天",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0155",
+    "history": []
+  },
+  {
+    "en": "clothes",
+    "cn": "衣服",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0156",
+    "history": []
+  },
+  {
+    "en": "grass",
+    "cn": "草",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0157",
+    "history": []
+  },
+  {
+    "en": "hand",
+    "cn": "手",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0158",
+    "history": []
+  },
+  {
+    "en": "tennis",
+    "cn": "网球",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0159",
+    "history": []
+  },
+  {
+    "en": "brown",
+    "cn": "棕色",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0160",
+    "history": []
+  },
+  {
+    "en": "example",
+    "cn": "例子",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0161",
+    "history": []
+  },
+  {
+    "en": "money",
+    "cn": "钱",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0162",
+    "history": []
+  },
+  {
+    "en": "car",
+    "cn": "汽车",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0163",
+    "history": []
+  },
+  {
+    "en": "student",
+    "cn": "学生",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0164",
+    "history": []
+  },
+  {
+    "en": "egg",
+    "cn": "鸡蛋",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0165",
+    "history": []
+  },
+  {
+    "en": "price",
+    "cn": "价格",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0166",
+    "history": []
+  },
+  {
+    "en": "fast",
+    "cn": "快的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0167",
+    "history": []
+  },
+  {
+    "en": "wash",
+    "cn": "洗",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0168",
+    "history": []
+  },
+  {
+    "en": "juice",
+    "cn": "果汁",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0169",
+    "history": []
+  },
+  {
+    "en": "try",
+    "cn": "尝试",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0170",
+    "history": []
+  },
+  {
+    "en": "bank",
+    "cn": "银行",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0171",
+    "history": []
+  },
+  {
+    "en": "start",
+    "cn": "开始",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0172",
+    "history": []
+  },
+  {
+    "en": "stop",
+    "cn": "停止",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0173",
+    "history": []
+  },
+  {
+    "en": "hot",
+    "cn": "热的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0174",
+    "history": []
+  },
+  {
+    "en": "rich",
+    "cn": "富有的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0175",
+    "history": []
+  },
+  {
+    "en": "morning",
+    "cn": "早晨",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0176",
+    "history": []
+  },
+  {
+    "en": "kitchen",
+    "cn": "厨房",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0177",
+    "history": []
+  },
+  {
+    "en": "listen",
+    "cn": "听",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0178",
+    "history": []
+  },
+  {
+    "en": "evening",
+    "cn": "晚上",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0179",
+    "history": []
+  },
+  {
+    "en": "ill",
+    "cn": "生病的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0180",
+    "history": []
+  },
+  {
+    "en": "like",
+    "cn": "喜欢",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0181",
+    "history": []
+  },
+  {
+    "en": "banana",
+    "cn": "香蕉",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0182",
+    "history": []
+  },
+  {
+    "en": "colour",
+    "cn": "颜色",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0183",
+    "history": []
+  },
+  {
+    "en": "plate",
+    "cn": "盘子",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0184",
+    "history": []
+  },
+  {
+    "en": "group",
+    "cn": "组",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0185",
+    "history": []
+  },
+  {
+    "en": "science",
+    "cn": "科学",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0186",
+    "history": []
+  },
+  {
+    "en": "open",
+    "cn": "开着的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0187",
+    "history": []
+  },
+  {
+    "en": "difficult",
+    "cn": "困难的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0188",
+    "history": []
+  },
+  {
+    "en": "face",
+    "cn": "脸",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0189",
+    "history": []
+  },
+  {
+    "en": "swim",
+    "cn": "游泳",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0190",
+    "history": []
+  },
+  {
+    "en": "heart",
+    "cn": "心脏",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0191",
+    "history": []
+  },
+  {
+    "en": "bread",
+    "cn": "面包",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0192",
+    "history": []
+  },
+  {
+    "en": "touch",
+    "cn": "触摸",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0193",
+    "history": []
+  },
+  {
+    "en": "make",
+    "cn": "制作",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0194",
+    "history": []
+  },
+  {
+    "en": "farm",
+    "cn": "农场",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0195",
+    "history": []
+  },
+  {
+    "en": "breakfast",
+    "cn": "早餐",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0196",
+    "history": []
+  },
+  {
+    "en": "taxi",
+    "cn": "出租车",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0197",
+    "history": []
+  },
+  {
+    "en": "feel",
+    "cn": "感觉",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0198",
+    "history": []
+  },
+  {
+    "en": "boat",
+    "cn": "船",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0199",
+    "history": []
+  },
+  {
+    "en": "team",
+    "cn": "队",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0200",
+    "history": []
+  },
+  {
+    "en": "bed",
+    "cn": "床",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0201",
+    "history": []
+  },
+  {
+    "en": "travel",
+    "cn": "旅行",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0202",
+    "history": []
+  },
+  {
+    "en": "bring",
+    "cn": "带来",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0203",
+    "history": []
+  },
+  {
+    "en": "look",
+    "cn": "看",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0204",
+    "history": []
+  },
+  {
+    "en": "baby",
+    "cn": "婴儿",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0205",
+    "history": []
+  },
+  {
+    "en": "reason",
+    "cn": "原因",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0206",
+    "history": []
+  },
+  {
+    "en": "coat",
+    "cn": "外套",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0207",
+    "history": []
+  },
+  {
+    "en": "station",
+    "cn": "车站",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0208",
+    "history": []
+  },
+  {
+    "en": "math",
+    "cn": "数学",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0209",
+    "history": []
+  },
+  {
+    "en": "chinese",
+    "cn": "中文",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0210",
+    "history": []
+  },
+  {
+    "en": "weather",
+    "cn": "天气",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0211",
+    "history": []
+  },
+  {
+    "en": "food",
+    "cn": "食物",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0212",
+    "history": []
+  },
+  {
+    "en": "city",
+    "cn": "城市",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0213",
+    "history": []
+  },
+  {
+    "en": "walk",
+    "cn": "走",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0214",
+    "history": []
+  },
+  {
+    "en": "health",
+    "cn": "健康",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0215",
+    "history": []
+  },
+  {
+    "en": "paper",
+    "cn": "纸",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0216",
+    "history": []
+  },
+  {
+    "en": "weak",
+    "cn": "弱的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0217",
+    "history": []
+  },
+  {
+    "en": "meat",
+    "cn": "肉",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0218",
+    "history": []
+  },
+  {
+    "en": "football",
+    "cn": "足球",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0219",
+    "history": []
+  },
+  {
+    "en": "tea",
+    "cn": "茶",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0220",
+    "history": []
+  },
+  {
+    "en": "art",
+    "cn": "美术",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0221",
+    "history": []
+  },
+  {
+    "en": "pencil",
+    "cn": "铅笔",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0222",
+    "history": []
+  },
+  {
+    "en": "today",
+    "cn": "今天",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0223",
+    "history": []
+  },
+  {
+    "en": "send",
+    "cn": "发送",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0224",
+    "history": []
+  },
+  {
+    "en": "pay",
+    "cn": "付款",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0225",
+    "history": []
+  },
+  {
+    "en": "milk",
+    "cn": "牛奶",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0226",
+    "history": []
+  },
+  {
+    "en": "library",
+    "cn": "图书馆",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0227",
+    "history": []
+  },
+  {
+    "en": "girl",
+    "cn": "女孩",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0228",
+    "history": []
+  },
+  {
+    "en": "put",
+    "cn": "放",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0229",
+    "history": []
+  },
+  {
+    "en": "plane",
+    "cn": "飞机",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0230",
+    "history": []
+  },
+  {
+    "en": "cake",
+    "cn": "蛋糕",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0231",
+    "history": []
+  },
+  {
+    "en": "go",
+    "cn": "去",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0232",
+    "history": []
+  },
+  {
+    "en": "name",
+    "cn": "名字",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0233",
+    "history": []
+  },
+  {
+    "en": "use",
+    "cn": "使用",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0234",
+    "history": []
+  },
+  {
+    "en": "orange",
+    "cn": "橘子",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0235",
+    "history": []
+  },
+  {
+    "en": "big",
+    "cn": "大的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0236",
+    "history": []
+  },
+  {
+    "en": "door",
+    "cn": "门",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0237",
+    "history": []
+  },
+  {
+    "en": "rule",
+    "cn": "规则",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0238",
+    "history": []
+  },
+  {
+    "en": "box",
+    "cn": "盒子",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0239",
+    "history": []
+  },
+  {
+    "en": "lunch",
+    "cn": "午餐",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0240",
+    "history": []
+  },
+  {
+    "en": "win",
+    "cn": "赢",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0241",
+    "history": []
+  },
+  {
+    "en": "yesterday",
+    "cn": "昨天",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0242",
+    "history": []
+  },
+  {
+    "en": "free",
+    "cn": "空闲的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0243",
+    "history": []
+  },
+  {
+    "en": "answer",
+    "cn": "回答",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0244",
+    "history": []
+  },
+  {
+    "en": "chair",
+    "cn": "椅子",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0245",
+    "history": []
+  },
+  {
+    "en": "help",
+    "cn": "帮助",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0246",
+    "history": []
+  },
+  {
+    "en": "end",
+    "cn": "结束",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0247",
+    "history": []
+  },
+  {
+    "en": "wait",
+    "cn": "等待",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0248",
+    "history": []
+  },
+  {
+    "en": "famous",
+    "cn": "著名的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0249",
+    "history": []
+  },
+  {
+    "en": "medicine",
+    "cn": "药",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0250",
+    "history": []
+  },
+  {
+    "en": "test",
+    "cn": "测验",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0251",
+    "history": []
+  },
+  {
+    "en": "angry",
+    "cn": "生气的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0252",
+    "history": []
+  },
+  {
+    "en": "salt",
+    "cn": "盐",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0253",
+    "history": []
+  },
+  {
+    "en": "word",
+    "cn": "单词",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0254",
+    "history": []
+  },
+  {
+    "en": "sister",
+    "cn": "姐妹",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0255",
+    "history": []
+  },
+  {
+    "en": "come",
+    "cn": "来",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0256",
+    "history": []
+  },
+  {
+    "en": "dog",
+    "cn": "狗",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0257",
+    "history": []
+  },
+  {
+    "en": "need",
+    "cn": "需要",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0258",
+    "history": []
+  },
+  {
+    "en": "vegetable",
+    "cn": "蔬菜",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0259",
+    "history": []
+  },
+  {
+    "en": "work",
+    "cn": "工作",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0260",
+    "history": []
+  },
+  {
+    "en": "email",
+    "cn": "电子邮件",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0261",
+    "history": []
+  },
+  {
+    "en": "idea",
+    "cn": "主意",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0262",
+    "history": []
+  },
+  {
+    "en": "young",
+    "cn": "年轻的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0263",
+    "history": []
+  },
+  {
+    "en": "sell",
+    "cn": "卖",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0264",
+    "history": []
+  },
+  {
+    "en": "begin",
+    "cn": "开始",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0265",
+    "history": []
+  },
+  {
+    "en": "give",
+    "cn": "给",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0266",
+    "history": []
+  },
+  {
+    "en": "drive",
+    "cn": "驾驶",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0267",
+    "history": []
+  },
+  {
+    "en": "cheese",
+    "cn": "奶酪",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0268",
+    "history": []
+  },
+  {
+    "en": "busy",
+    "cn": "忙碌的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0269",
+    "history": []
+  },
+  {
+    "en": "ride",
+    "cn": "骑",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0270",
+    "history": []
+  },
+  {
+    "en": "hair",
+    "cn": "头发",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0271",
+    "history": []
+  },
+  {
+    "en": "apple",
+    "cn": "苹果",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0272",
+    "history": []
+  },
+  {
+    "en": "tired",
+    "cn": "累的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0273",
+    "history": []
+  },
+  {
+    "en": "english",
+    "cn": "英语",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0274",
+    "history": []
+  },
+  {
+    "en": "take",
+    "cn": "拿",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0275",
+    "history": []
+  },
+  {
+    "en": "dress",
+    "cn": "连衣裙",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0276",
+    "history": []
+  },
+  {
+    "en": "leave",
+    "cn": "离开",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0277",
+    "history": []
+  },
+  {
+    "en": "old",
+    "cn": "旧的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0278",
+    "history": []
+  },
+  {
+    "en": "music",
+    "cn": "音乐",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0279",
+    "history": []
+  },
+  {
+    "en": "parent",
+    "cn": "父母",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0280",
+    "history": []
+  },
+  {
+    "en": "meet",
+    "cn": "遇见",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0281",
+    "history": []
+  },
+  {
+    "en": "ticket",
+    "cn": "票",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0282",
+    "history": []
+  },
+  {
+    "en": "plant",
+    "cn": "植物",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0283",
+    "history": []
+  },
+  {
+    "en": "easy",
+    "cn": "容易的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0284",
+    "history": []
+  },
+  {
+    "en": "count",
+    "cn": "数",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0285",
+    "history": []
+  },
+  {
+    "en": "read",
+    "cn": "读",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0286",
+    "history": []
+  },
+  {
+    "en": "foot",
+    "cn": "脚",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0287",
+    "history": []
+  },
+  {
+    "en": "think",
+    "cn": "思考",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0288",
+    "history": []
+  },
+  {
+    "en": "understand",
+    "cn": "理解",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0289",
+    "history": []
+  },
+  {
+    "en": "bird",
+    "cn": "鸟",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0290",
+    "history": []
+  },
+  {
+    "en": "grape",
+    "cn": "葡萄",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0291",
+    "history": []
+  },
+  {
+    "en": "eat",
+    "cn": "吃",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0292",
+    "history": []
+  },
+  {
+    "en": "country",
+    "cn": "国家",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0293",
+    "history": []
+  },
+  {
+    "en": "wear",
+    "cn": "穿",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0294",
+    "history": []
+  },
+  {
+    "en": "dance",
+    "cn": "跳舞",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0295",
+    "history": []
+  },
+  {
+    "en": "exam",
+    "cn": "考试",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0296",
+    "history": []
+  },
+  {
+    "en": "interesting",
+    "cn": "有趣的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0297",
+    "history": []
+  },
+  {
+    "en": "man",
+    "cn": "男人",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0298",
+    "history": []
+  },
+  {
+    "en": "red",
+    "cn": "红色",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0299",
+    "history": []
+  },
+  {
+    "en": "fish",
+    "cn": "鱼",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0300",
+    "history": []
+  },
+  {
+    "en": "book",
+    "cn": "书",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0301",
+    "history": []
+  },
+  {
+    "en": "beautiful",
+    "cn": "美丽的",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0302",
+    "history": []
+  },
+  {
+    "en": "speak",
+    "cn": "说",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0303",
+    "history": []
+  },
+  {
+    "en": "tooth",
+    "cn": "牙齿",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0304",
+    "history": []
+  },
+  {
+    "en": "bike",
+    "cn": "自行车",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0305",
+    "history": []
+  },
+  {
+    "en": "phone",
+    "cn": "电话",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0306",
+    "history": []
+  },
+  {
+    "en": "coffee",
+    "cn": "咖啡",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0307",
+    "history": []
+  },
+  {
+    "en": "friend",
+    "cn": "朋友",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0308",
+    "history": []
+  },
+  {
+    "en": "watch",
+    "cn": "观看",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0309",
+    "history": []
+  },
+  {
+    "en": "holiday",
+    "cn": "假期",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0310",
+    "history": []
+  },
+  {
+    "en": "teach",
+    "cn": "教",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0311",
+    "history": []
+  },
+  {
+    "en": "love",
+    "cn": "爱",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0312",
+    "history": []
+  },
+  {
+    "en": "market",
+    "cn": "市场",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0313",
+    "history": []
+  },
+  {
+    "en": "mouth",
+    "cn": "嘴",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0314",
+    "history": []
+  },
+  {
+    "en": "wind",
+    "cn": "风",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0315",
+    "history": []
+  },
+  {
+    "en": "fruit",
+    "cn": "水果",
+    "status": "new",
+    "streak": 0,
+    "wrongCount": 0,
+    "id": "ket0316",
     "history": []
   }
 ]

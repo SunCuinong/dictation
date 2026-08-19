@@ -36,18 +36,40 @@ os.makedirs(DATA_DIR, exist_ok=True)
 
 def ensure_words_file():
     if not os.path.exists(WORDS_FILE):
-        # 与前端内置词库保持一致
+        # 与前端内置词库/words.json 保持一致（KET 核心实词）
         builtin = [
-            ["apple", "苹果"], ["banana", "香蕉"], ["cat", "猫"], ["dog", "狗"],
-            ["book", "书"], ["water", "水"], ["school", "学校"], ["teacher", "老师"],
-            ["student", "学生"], ["friend", "朋友"], ["family", "家庭"], ["happy", "开心的"],
-            ["red", "红色"], ["blue", "蓝色"], ["green", "绿色"], ["yellow", "黄色"],
-            ["morning", "早晨"], ["evening", "晚上"], ["today", "今天"], ["tomorrow", "明天"],
-            ["computer", "电脑"], ["music", "音乐"], ["sport", "运动"], ["food", "食物"],
-            ["animal", "动物"], ["plant", "植物"], ["weather", "天气"], ["travel", "旅行"],
-            ["language", "语言"], ["science", "科学"], ["history", "历史"], ["math", "数学"],
-            ["english", "英语"], ["chinese", "中文"], ["write", "写"], ["read", "读"],
-            ["listen", "听"], ["speak", "说"], ["learn", "学习"], ["remember", "记住"],
+            ["apple", "苹果"], ["banana", "香蕉"], ["orange", "橘子"], ["grape", "葡萄"], ["water", "水"], ["bread", "面包"], ["cheese", "奶酪"], ["egg", "鸡蛋"], ["rice", "米饭"], ["meat", "肉"],
+            ["fish", "鱼"], ["chicken", "鸡肉"], ["soup", "汤"], ["salt", "盐"], ["sugar", "糖"], ["coffee", "咖啡"], ["tea", "茶"], ["milk", "牛奶"], ["juice", "果汁"], ["cake", "蛋糕"],
+            ["book", "书"], ["pen", "钢笔"], ["pencil", "铅笔"], ["paper", "纸"], ["bag", "包"], ["box", "盒子"], ["key", "钥匙"], ["door", "门"], ["window", "窗户"], ["floor", "地板"],
+            ["school", "学校"], ["teacher", "老师"], ["student", "学生"], ["class", "班级"], ["lesson", "课"], ["homework", "家庭作业"], ["exam", "考试"], ["test", "测验"], ["library", "图书馆"], ["friend", "朋友"],
+            ["family", "家庭"], ["father", "父亲"], ["mother", "母亲"], ["brother", "兄弟"], ["sister", "姐妹"], ["parent", "父母"], ["child", "孩子"], ["baby", "婴儿"], ["grandmother", "祖母"], ["grandfather", "祖父"],
+            ["home", "家"], ["room", "房间"], ["kitchen", "厨房"], ["garden", "花园"], ["bed", "床"], ["chair", "椅子"], ["table", "桌子"], ["computer", "电脑"], ["phone", "电话"], ["television", "电视"],
+            ["cat", "猫"], ["dog", "狗"], ["bird", "鸟"], ["animal", "动物"], ["plant", "植物"], ["tree", "树"], ["flower", "花"], ["grass", "草"], ["horse", "马"], ["farm", "农场"],
+            ["city", "城市"], ["town", "城镇"], ["street", "街道"], ["park", "公园"], ["shop", "商店"], ["market", "市场"], ["bank", "银行"], ["post", "邮政"], ["hospital", "医院"], ["station", "车站"],
+            ["car", "汽车"], ["bus", "公交车"], ["train", "火车"], ["bike", "自行车"], ["boat", "船"], ["plane", "飞机"], ["taxi", "出租车"], ["road", "道路"], ["travel", "旅行"], ["holiday", "假期"],
+            ["morning", "早晨"], ["evening", "晚上"], ["today", "今天"], ["tomorrow", "明天"], ["yesterday", "昨天"], ["week", "周"], ["month", "月"], ["year", "年"], ["time", "时间"], ["hour", "小时"],
+            ["red", "红色"], ["blue", "蓝色"], ["green", "绿色"], ["yellow", "黄色"], ["black", "黑色"], ["white", "白色"], ["brown", "棕色"], ["colour", "颜色"], ["size", "尺寸"], ["number", "数字"],
+            ["happy", "开心的"], ["sad", "伤心的"], ["tired", "累的"], ["angry", "生气的"], ["hungry", "饥饿的"], ["thirsty", "口渴的"], ["busy", "忙碌的"], ["free", "空闲的"], ["ill", "生病的"], ["well", "健康的"],
+            ["big", "大的"], ["small", "小的"], ["long", "长的"], ["short", "短的"], ["new", "新的"], ["old", "旧的"], ["hot", "热的"], ["cold", "冷的"], ["clean", "干净的"], ["dirty", "脏的"],
+            ["good", "好的"], ["bad", "坏的"], ["fast", "快的"], ["slow", "慢的"], ["easy", "容易的"], ["difficult", "困难的"], ["early", "早的"], ["late", "晚的"], ["rich", "富有的"], ["poor", "贫穷的"],
+            ["beautiful", "美丽的"], ["important", "重要的"], ["interesting", "有趣的"], ["famous", "著名的"], ["young", "年轻的"], ["strong", "强壮的"], ["weak", "弱的"], ["open", "开着的"], ["closed", "关着的"], ["ready", "准备好的"],
+            ["write", "写"], ["read", "读"], ["listen", "听"], ["speak", "说"], ["learn", "学习"], ["remember", "记住"], ["understand", "理解"], ["think", "思考"], ["know", "知道"], ["forget", "忘记"],
+            ["like", "喜欢"], ["love", "爱"], ["want", "想要"], ["need", "需要"], ["help", "帮助"], ["find", "找到"], ["lose", "丢失"], ["make", "制作"], ["do", "做"], ["use", "使用"],
+            ["eat", "吃"], ["drink", "喝"], ["cook", "烹饪"], ["buy", "买"], ["sell", "卖"], ["pay", "付款"], ["give", "给"], ["take", "拿"], ["bring", "带来"], ["send", "发送"],
+            ["go", "去"], ["come", "来"], ["walk", "走"], ["run", "跑"], ["swim", "游泳"], ["ride", "骑"], ["drive", "驾驶"], ["fly", "飞"], ["leave", "离开"], ["arrive", "到达"],
+            ["see", "看见"], ["look", "看"], ["watch", "观看"], ["hear", "听见"], ["smell", "闻"], ["taste", "尝"], ["feel", "感觉"], ["touch", "触摸"], ["say", "说"], ["tell", "告诉"],
+            ["start", "开始"], ["stop", "停止"], ["finish", "完成"], ["wait", "等待"], ["meet", "遇见"], ["call", "打电话"], ["ask", "问"], ["answer", "回答"], ["show", "展示"], ["teach", "教"],
+            ["play", "玩"], ["work", "工作"], ["study", "学习"], ["sing", "唱歌"], ["dance", "跳舞"], ["draw", "画"], ["count", "数"], ["win", "赢"], ["lose", "输"], ["try", "尝试"],
+            ["weather", "天气"], ["sun", "太阳"], ["rain", "雨"], ["snow", "雪"], ["wind", "风"], ["cloud", "云"], ["sky", "天空"], ["mountain", "山"], ["river", "河"], ["sea", "海"],
+            ["language", "语言"], ["english", "英语"], ["chinese", "中文"], ["word", "单词"], ["sentence", "句子"], ["letter", "字母"], ["music", "音乐"], ["song", "歌"], ["game", "游戏"], ["sport", "运动"],
+            ["football", "足球"], ["basketball", "篮球"], ["tennis", "网球"], ["swimming", "游泳"], ["science", "科学"], ["history", "历史"], ["math", "数学"], ["art", "美术"], ["geography", "地理"], ["PE", "体育"],
+            ["food", "食物"], ["fruit", "水果"], ["vegetable", "蔬菜"], ["breakfast", "早餐"], ["lunch", "午餐"], ["dinner", "晚餐"], ["meal", "一顿饭"], ["restaurant", "餐馆"], ["menu", "菜单"], ["plate", "盘子"],
+            ["clothes", "衣服"], ["shirt", "衬衫"], ["dress", "连衣裙"], ["shoe", "鞋"], ["hat", "帽子"], ["coat", "外套"], ["sock", "袜子"], ["pocket", "口袋"], ["wear", "穿"], ["put", "放"],
+            ["head", "头"], ["face", "脸"], ["eye", "眼睛"], ["ear", "耳朵"], ["nose", "鼻子"], ["mouth", "嘴"], ["hand", "手"], ["foot", "脚"], ["arm", "手臂"], ["leg", "腿"],
+            ["body", "身体"], ["hair", "头发"], ["tooth", "牙齿"], ["heart", "心脏"], ["health", "健康"], ["medicine", "药"], ["doctor", "医生"], ["toothbrush", "牙刷"], ["wash", "洗"], ["brush", "刷"],
+            ["name", "名字"], ["people", "人们"], ["person", "人"], ["man", "男人"], ["woman", "女人"], ["boy", "男孩"], ["girl", "女孩"], ["group", "组"], ["team", "队"], ["world", "世界"],
+            ["country", "国家"], ["money", "钱"], ["price", "价格"], ["ticket", "票"], ["gift", "礼物"], ["card", "卡片"], ["email", "电子邮件"], ["message", "信息"], ["question", "问题"], ["problem", "难题"],
+            ["idea", "主意"], ["reason", "原因"], ["example", "例子"], ["rule", "规则"], ["end", "结束"], ["begin", "开始"], ["change", "改变"], ["hope", "希望"],
         ]
         data = [{"en": e, "cn": c, "status": "new", "streak": 0, "wrongCount": 0} for e, c in builtin]
         with open(WORDS_FILE, "w", encoding="utf-8") as f:
